@@ -38,15 +38,15 @@ a:hover, a:active, a:focus { color: #722F37; }
 
 .hero-intro { padding-top: 4rem; }
 
-.hero-intro::after { content: ""; position: absolute; padding: 5rem; inset: 0; z-index: -1; background-image: url(/assets/images/vineyard1.jpg); background-size: cover; background-attachment: fixed; background-position: center; background-repeat: no-repeat; }
+.hero-intro::after { content: ""; position: absolute; padding: 5rem; inset: 0; z-index: -1; background-image: url(assets/images/vineyard1.jpg); background-size: cover; background-attachment: fixed; background-position: center; background-repeat: no-repeat; }
 
-.back-img1 { background-image: url(/assets/images/vineyard1.jpg); }
+.back-img1 { background-image: url(assets/images/vineyard1.jpg); }
 
-.back-img2 { background-image: url(/assets/images/vineyard2.jpg); }
+.back-img2 { background-image: url(assets/images/vineyard2.jpg); }
 
-.back-img3 { background-image: url(/assets/images/vineyard3.jpg); }
+.back-img3 { background-image: url(assets/images/vineyard3.jpg); }
 
-.back-img4 { background-image: url(/assets/images/vineyard4.jpg); }
+.back-img4 { background-image: url(assets/images/vineyard4.jpg); }
 
 .media-scroller { display: grid; grid-auto-flow: column; grid-auto-columns: calc(100% - 2rem); overflow-x: auto; overscroll-behavior-inline: contain; }
 
@@ -64,23 +64,23 @@ a:hover, a:active, a:focus { color: #722F37; }
 
 .centered { position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); }
 
-.wine-about__img { background-image: url(/assets/images/winegrape2.jpg); height: 20rem; }
+.wine-about__img { background-image: url(assets/images/winegrape2.jpg); height: 20rem; }
 
-.product__img-1 { background-image: url(/assets/images/montepulciano1.jpg); aspect-ratio: 16 / 9; }
+.product__img-1 { background-image: url(assets/images/montepulciano1.jpg); aspect-ratio: 16 / 9; }
 
-.product__img-2 { background-image: url(/assets/images/sangiovese1.jpg); aspect-ratio: 16 / 9; }
+.product__img-2 { background-image: url(assets/images/sangiovese1.jpg); aspect-ratio: 16 / 9; }
 
-.product__img-3 { background-image: url(/assets/images/syrah1.jpg); aspect-ratio: 16 / 9; }
+.product__img-3 { background-image: url(assets/images/syrah1.jpg); aspect-ratio: 16 / 9; }
 
-.product__img-4 { background-image: url(/assets/images/trebbiano1.jpg); aspect-ratio: 16 / 9; }
+.product__img-4 { background-image: url(assets/images/trebbiano1.jpg); aspect-ratio: 16 / 9; }
 
 .form-section { position: relative; min-height: 100vh; width: 100%; margin: 0; padding: 0; filter: brightness(0.95); }
 
-.form-section::after { content: ""; position: absolute; background-image: url(/assets/images/vineyard4.jpg); background-position: top middle; background-repeat: no-repeat; background-size: cover; left: 0; top: 0; width: 100%; height: 100%; filter: blur(4px); z-index: -1; }
+.form-section::after { content: ""; position: absolute; background-image: url(assets/images/vineyard4.jpg); background-position: top middle; background-repeat: no-repeat; background-size: cover; left: 0; top: 0; width: 100%; height: 100%; filter: blur(4px); z-index: -1; }
 
 .form-container { background-color: #fff; box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px; display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); }
 
-.form-img { background-image: url(/assets/images/vineyard4.jpg); min-height: 200px; }
+.form-img { background-image: url(assets/images/vineyard4.jpg); min-height: 200px; }
 
 .form { padding: 2rem 1rem; }
 
@@ -395,6 +395,6 @@ p { font-size: var(--step--2); }
 
 .is-hidden { display: none; }
 
-.equipment__img { background-image: url(/assets/images/winegrape1.jpg); height: 20rem; }
+.equipment__img { background-image: url(assets/images/winegrape1.jpg); height: 20rem; }
 
 /*# sourceMappingURL=main.css.map */

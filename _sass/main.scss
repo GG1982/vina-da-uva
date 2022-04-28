@@ -167,7 +167,7 @@ a:focus {
   inset: 0;
   z-index: -1;
 
-  background-image: url(/assets/images/vineyard1.jpg);
+  background-image: url(assets/images/vineyard1.jpg);
   background-size: cover;
   background-attachment: fixed;
   background-position: center;
@@ -175,19 +175,19 @@ a:focus {
 }
 
 .back-img1 {
-  background-image: url(/assets/images/vineyard1.jpg);
+  background-image: url(assets/images/vineyard1.jpg);
 }
 
 .back-img2 {
-  background-image: url(/assets/images/vineyard2.jpg);
+  background-image: url(assets/images/vineyard2.jpg);
 }
 
 .back-img3 {
-  background-image: url(/assets/images/vineyard3.jpg);
+  background-image: url(assets/images/vineyard3.jpg);
 }
 
 .back-img4 {
-  background-image: url(/assets/images/vineyard4.jpg);
+  background-image: url(assets/images/vineyard4.jpg);
 }
 
 
@@ -243,29 +243,29 @@ a:focus {
 }
 
 .wine-about__img {
-  background-image: url(/assets/images/winegrape2.jpg);
+  background-image: url(assets/images/winegrape2.jpg);
   height: 20rem;
 }
 
 
 // Products
 .product__img-1 {
-  background-image: url(/assets/images/montepulciano1.jpg);
+  background-image: url(assets/images/montepulciano1.jpg);
   aspect-ratio: 16 / 9;
 }
 
 .product__img-2 {
-  background-image: url(/assets/images/sangiovese1.jpg);
+  background-image: url(assets/images/sangiovese1.jpg);
   aspect-ratio: 16 / 9;
 }
 
 .product__img-3 {
-  background-image: url(/assets/images/syrah1.jpg);
+  background-image: url(assets/images/syrah1.jpg);
   aspect-ratio: 16 / 9;
 }
 
 .product__img-4 {
-  background-image: url(/assets/images/trebbiano1.jpg);
+  background-image: url(assets/images/trebbiano1.jpg);
   aspect-ratio: 16 / 9;
 }
 
@@ -283,7 +283,7 @@ a:focus {
 .form-section::after {
   content: "";
   position: absolute;
-  background-image: url(/assets/images/vineyard4.jpg);
+  background-image: url(assets/images/vineyard4.jpg);
   background-position: top middle;
   background-repeat: no-repeat;
   background-size: cover;
@@ -305,7 +305,7 @@ a:focus {
 }
 
 .form-img {
-  background-image: url(/assets/images/vineyard4.jpg);
+  background-image: url(assets/images/vineyard4.jpg);
   min-height: 200px;
   // height: 100%;
   // width: 100%;

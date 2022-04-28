@@ -1,3 +1,34 @@
+/* Box sizing rules */
+*, *::before, *::after { box-sizing: border-box; }
+
+/* Remove default padding */
+ul[class], ol[class] { padding: 0; }
+
+/* Remove default margin */
+body, h1, h2, h3, h4, h5, h6, p, q, ul[class], ol[class], li, figure, figcaption, blockquote, dl, dd { margin: 0; }
+
+/* Set core body defaults */
+html { scroll-behavior: smooth; }
+
+body { min-height: 100vh; text-rendering: optimizeSpeed; line-height: 1.6; }
+
+/* Remove list styles on ul, ol elements with a class attribute */
+ul[class], ol[class], li[class] { list-style: none; }
+
+/* A elements that don't have a class get default styles */
+a:not([class]) { text-decoration-skip-ink: auto; }
+
+/* Make images easier to work with */
+img { max-width: 100%; display: block; }
+
+/* Inherit fonts for inputs and buttons */
+input, button, textarea, select { font: inherit; }
+
+button { cursor: pointer; }
+
+/* Remove all animations and transitions for people that prefer not to see them */
+@media (prefers-reduced-motion: reduce) { * { animation-duration: 0.01ms !important; animation-iteration-count: 1 !important; transition-duration: 0.01ms !important; scroll-behavior: auto !important; } }
+
 html { height: 100%; }
 
 body { background: #ffffff; color: #000000; font-family: "Montserrat", sans-serif; display: flex; flex-direction: column; height: 100%; }
@@ -129,37 +160,6 @@ textarea { resize: none; }
 .bi { font-size: var(--step-1); }
 
 @media screen and (max-width: 550px) { .footer-container { display: flex; flex-direction: column; } .img-logo { max-width: 200px; } }
-
-/* Box sizing rules */
-*, *::before, *::after { box-sizing: border-box; }
-
-/* Remove default padding */
-ul[class], ol[class] { padding: 0; }
-
-/* Remove default margin */
-body, h1, h2, h3, h4, h5, h6, p, q, ul[class], ol[class], li, figure, figcaption, blockquote, dl, dd { margin: 0; }
-
-/* Set core body defaults */
-html { scroll-behavior: smooth; }
-
-body { min-height: 100vh; text-rendering: optimizeSpeed; line-height: 1.6; }
-
-/* Remove list styles on ul, ol elements with a class attribute */
-ul[class], ol[class], li[class] { list-style: none; }
-
-/* A elements that don't have a class get default styles */
-a:not([class]) { text-decoration-skip-ink: auto; }
-
-/* Make images easier to work with */
-img { max-width: 100%; display: block; }
-
-/* Inherit fonts for inputs and buttons */
-input, button, textarea, select { font: inherit; }
-
-button { cursor: pointer; }
-
-/* Remove all animations and transitions for people that prefer not to see them */
-@media (prefers-reduced-motion: reduce) { * { animation-duration: 0.01ms !important; animation-iteration-count: 1 !important; transition-duration: 0.01ms !important; scroll-behavior: auto !important; } }
 
 h1 { font-size: var(--step-5); }
 
@@ -395,6 +395,6 @@ p { font-size: var(--step--2); }
 
 .is-hidden { display: none; }
 
-.equipment__img { background-image: url(assets/images/winegrape1.jpg); height: 20rem; }
+.equipment__img { background-image: url(../../assets/images/winegrape1.jpg); height: 20rem; }
 
 /*# sourceMappingURL=main.css.map */

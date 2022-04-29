@@ -39,16 +39,27 @@ body {
   --step-5: clamp(3.27rem, calc(2.75rem + 2.56vw), 4.58rem);
 }
 
-section {
-  padding-top: 5rem;
-  margin-bottom: 2rem;
-}
+// section {
+//   padding-top: 5rem;
+//   margin-bottom: 2rem;
+// }
 // section + section {
 //   margin-bottom: var(--section-gap);
 // }
 
+* + * {
+  margin-bottom: 3rem;
+}
+
 .mobile-only {
   display: none;
+}
+
+// Dark Container
+.dark-con {
+  background-color: $clr--dark;
+  color: #ffffff;
+  padding-block: 4rem;
 }
 
 // General Links
@@ -317,12 +328,12 @@ a:focus {
 .form-img {
   background-image: url(../../assets/images/vineyard4.jpg);
   min-height: 200px;
-  // height: 100%;
-  // width: 100%;
+  height: 100%;
+  width: 100%;
 }
 
 .form {
-  padding: 2rem 1rem;
+  padding: 1rem;
   // max-height: 100%;
 }
 

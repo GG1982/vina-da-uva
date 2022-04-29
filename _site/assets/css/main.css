@@ -99,13 +99,15 @@ a:hover, a:active, a:focus { color: #722F37; }
 
 .wine-about__img { background-image: url(../../assets/images/winegrape2.jpg); height: 20rem; }
 
-.product__img-1 { background-image: url(../../assets/images/montepulciano1.jpg); aspect-ratio: 16 / 9; }
+.product__img-1 { background-image: url(../../assets/images/montepulciano1.jpg); }
 
-.product__img-2 { background-image: url(../../assets/images/sangiovese1.jpg); aspect-ratio: 16 / 9; }
+.product__img-2 { background-image: url(../../assets/images/sangiovese1.jpg); }
 
-.product__img-3 { background-image: url(../../assets/images/syrah1.jpg); aspect-ratio: 16 / 9; }
+.product__img-3 { background-image: url(../../assets/images/syrah1.jpg); }
 
-.product__img-4 { background-image: url(../../assets/images/trebbiano1.jpg); aspect-ratio: 16 / 9; }
+.product__img-4 { background-image: url(../../assets/images/trebbiano1.jpg); }
+
+.product__img { height: 200px; width: 400px; object-fit: cover; }
 
 .form-section { position: relative; min-height: 100%; width: 100%; margin: 0; padding: 0; filter: brightness(0.95); }
 

@@ -35,7 +35,9 @@ body { background: #ffffff; color: #000000; font-family: "Montserrat", sans-seri
 
 :root { --min-width-l: min(100% - 1rem, 105em, 95vw); --min-width-m: min(100% - 1rem, 90em, 90vw); --min-width-s: min(100% - 1rem, 50em, 90vw); --section-gap: 5rem; --step--2: clamp(1rem, calc(1rem + 0.10vw), 1.14rem); --step--1: clamp(1.09rem, calc(1.05rem + 0.21vw), 1.20rem); --step-0: clamp(1.31rem, calc(1.24rem + 0.37vw), 1.50rem); --step-1: clamp(1.58rem, calc(1.46rem + 0.59vw), 1.88rem); --step-2: clamp(1.89rem, calc(1.71rem + 0.89vw), 2.34rem); --step-3: clamp(2.27rem, calc(2.01rem + 1.29vw), 2.93rem); --step-4: clamp(2.72rem, calc(2.36rem + 1.83vw), 3.66rem); --step-5: clamp(3.27rem, calc(2.75rem + 2.56vw), 4.58rem); }
 
-section ~ section { margin-bottom: var(--section-gap); padding-top: 2rem; }
+section { padding-top: 5rem; margin-bottom: 2rem; }
+
+.mobile-only { display: none; }
 
 p > a:link, p > a:visited { text-decoration: underline; }
 
@@ -80,6 +82,8 @@ a:hover, a:active, a:focus { color: #722F37; }
 .back-img3 { background-image: url(../../assets/images/vineyard3.jpg); }
 
 .back-img4 { background-image: url(../../assets/images/vineyard4.jpg); }
+
+.img-logo { width: 90%; max-width: 600px; }
 
 .media-scroller { display: grid; grid-auto-flow: column; grid-auto-columns: calc(100% - 2rem); overflow-x: auto; overscroll-behavior-inline: contain; }
 
@@ -163,7 +167,7 @@ textarea { resize: none; }
 
 .bi { font-size: var(--step-1); }
 
-@media screen and (max-width: 550px) { .footer-container { display: flex; flex-direction: column; } .img-logo { max-width: 200px; } .media-element > img { height: 300px; } }
+@media screen and (max-width: 550px) { .footer-container { display: flex; flex-direction: column; } .mobile-only { display: block; } .media-element > img { height: 300px; } }
 
 h1 { font-size: var(--step-5); }
 
@@ -305,7 +309,7 @@ p { font-size: var(--step--2); }
 
 .grid-item:nth-child(28) { grid-row: 14; }
 
-@media screen and (max-width: 600px) { .grid-altcol-2 { display: flex; flex-direction: column; width: var(--min-width-l); padding: 6rem 0 0; } .grid-alt-col__body { width: 90%; } }
+@media screen and (max-width: 600px) { .grid-altcol-2 { display: flex; flex-direction: column; width: var(--min-width-l); } .grid-alt-col__body { width: 90%; } }
 
 .flex-center { display: flex; justify-content: center; align-items: center; }
 

@@ -39,9 +39,16 @@ body {
   --step-5: clamp(3.27rem, calc(2.75rem + 2.56vw), 4.58rem);
 }
 
-section ~ section {
-  margin-bottom: var(--section-gap);
-  padding-top: 2rem;
+section {
+  padding-top: 5rem;
+  margin-bottom: 2rem;
+}
+// section + section {
+//   margin-bottom: var(--section-gap);
+// }
+
+.mobile-only {
+  display: none;
 }
 
 // General Links
@@ -189,7 +196,10 @@ a:focus {
   background-image: url(../../assets/images/vineyard4.jpg);
 }
 
-
+.img-logo {
+  width: 90%;
+  max-width: 600px;
+}
 
 // Media Scroller
 .media-scroller {
@@ -270,7 +280,6 @@ a:focus {
   width: 400px;
   object-fit: cover;
 }
-
 // Form
 .form-section {
   position: relative;
@@ -437,8 +446,8 @@ textarea {
     flex-direction: column;
   }
 
-  .img-logo {
-    max-width: 200px;
+  .mobile-only {
+    display: block;
   }
 
   .media-element>img {

@@ -61,6 +61,10 @@ a:focus {
   color: #722F37;
 }
 
+.clr-accent {
+  color: $clr-accent
+}
+
 // General Button
 .btn {
   text-transform: uppercase;
@@ -216,6 +220,7 @@ a:focus {
   object-fit: cover;
 }
 
+
 .media-scroller>div:first-of-type {
   filter: brightness(0.95);
 }
@@ -273,7 +278,7 @@ a:focus {
 // Form
 .form-section {
   position: relative;
-  min-height: 100vh;
+  min-height: 100%;
   width: 100%;
   margin: 0;
   padding: 0;
@@ -438,6 +443,10 @@ textarea {
 
   .img-logo {
     max-width: 200px;
+  }
+
+  .media-element>img {
+    height: 300px;
   }
 
 }

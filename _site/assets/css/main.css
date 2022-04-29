@@ -41,6 +41,8 @@ p > a:link, p > a:visited { text-decoration: underline; }
 
 a:hover, a:active, a:focus { color: #722F37; }
 
+.clr-accent { color: #006194; }
+
 .btn { text-transform: uppercase; background-color: #00619465; border-radius: 3px; font-weight: 700; border: none; padding: 0.25rem 5rem; font-weight: 700; }
 
 .btn a { color: #000000; }
@@ -105,7 +107,7 @@ a:hover, a:active, a:focus { color: #722F37; }
 
 .product__img-4 { background-image: url(../../assets/images/trebbiano1.jpg); aspect-ratio: 16 / 9; }
 
-.form-section { position: relative; min-height: 100vh; width: 100%; margin: 0; padding: 0; filter: brightness(0.95); }
+.form-section { position: relative; min-height: 100%; width: 100%; margin: 0; padding: 0; filter: brightness(0.95); }
 
 .form-section::after { content: ""; position: absolute; background-image: url(../../assets/images/vineyard4.jpg); background-position: top middle; background-repeat: no-repeat; background-size: cover; left: 0; top: 0; width: 100%; height: 100%; filter: blur(4px); z-index: -1; }
 
@@ -159,7 +161,7 @@ textarea { resize: none; }
 
 .bi { font-size: var(--step-1); }
 
-@media screen and (max-width: 550px) { .footer-container { display: flex; flex-direction: column; } .img-logo { max-width: 200px; } }
+@media screen and (max-width: 550px) { .footer-container { display: flex; flex-direction: column; } .img-logo { max-width: 200px; } .media-element > img { height: 300px; } }
 
 h1 { font-size: var(--step-5); }
 
@@ -186,8 +188,6 @@ p { font-size: var(--step--2); }
 .clr-blue { color: blue; }
 
 .clr-purple { color: purple; }
-
-.clr-accent { color: #006194; }
 
 .font--2 { font-size: var(--step--2); }
 

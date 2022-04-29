@@ -71,7 +71,7 @@ a:hover, a:active, a:focus { color: #722F37; }
 
 .hero-intro { padding-top: 4rem; }
 
-.hero-intro::after { content: ""; position: absolute; padding: 5rem; inset: 0; z-index: -1; background-image: url(../../assets/images/vineyard1.jpg); background-size: cover; background-attachment: fixed; background-position: center; background-repeat: no-repeat; }
+.hero-intro::after { content: ""; position: absolute; padding: 5rem; inset: 0; z-index: -1; background-image: url(../../assets/images/vineyard1.jpg); background-size: cover; background-position: center; background-repeat: no-repeat; }
 
 .back-img1 { background-image: url(../../assets/images/vineyard1.jpg); }
 

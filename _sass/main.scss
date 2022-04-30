@@ -39,17 +39,11 @@ body {
   --step-5: clamp(3.27rem, calc(2.75rem + 2.56vw), 4.58rem);
 }
 
-// section {
-//   padding-top: 5rem;
-//   margin-bottom: 2rem;
-// }
-// section + section {
-//   margin-bottom: var(--section-gap);
-// }
-
-* + * {
-  margin-bottom: 3rem;
+section {
+  padding-top: 5rem;
+  margin-bottom: 4rem;
 }
+
 
 .mobile-only {
   display: none;
@@ -59,7 +53,6 @@ body {
 .dark-con {
   background-color: $clr--dark;
   color: #ffffff;
-  padding-block: 4rem;
 }
 
 // General Links
@@ -295,6 +288,7 @@ a:focus {
 .form-section {
   position: relative;
   width: 100%;
+  max-height: fit-content;
   margin: 0;
   padding: 0 0 5rem;
   filter: brightness(0.95);
@@ -328,14 +322,14 @@ a:focus {
   background-image: url(../../assets/images/vineyard4.jpg);
   min-height: 200px;
 }
-
 .form {
   padding: 1rem;
-
 }
+
 
 .form-input {
   width: 100%;
+  margin-bottom: 50px;
 }
 
 textarea {
@@ -347,7 +341,7 @@ textarea {
   font-family: inherit;
   font-size: 14px;
   border: 0;
-  padding-block: 0.25rem;
+  // padding-block: 0.25rem;
 }
 
 .form-button {
@@ -355,6 +349,7 @@ textarea {
   background-color: #00619465;
   border-radius: 3px;
   font-weight: 700;
+  width: 100%;
 }
 
 .form-button:focus,

@@ -288,7 +288,7 @@ a:focus {
 .form-section {
   position: relative;
   width: 100%;
-  max-height: fit-content;
+  max-height: 100%;
   margin: 0;
   padding: 0 0 5rem;
   filter: brightness(0.95);
@@ -324,12 +324,13 @@ a:focus {
 }
 .form {
   padding: 1rem;
+  min-height: 200px;
 }
 
 
 .form-input {
   width: 100%;
-  margin-bottom: 50px;
+  margin-bottom: 40px;
 }
 
 textarea {

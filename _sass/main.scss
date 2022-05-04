@@ -29,7 +29,7 @@ body {
   --min-width-m: min(100% - 1rem, 90em, 90vw);
   --min-width-s: min(100% - 1rem, 50em, 90vw);
 
-  --padding-block: min(8vh, 10rem);
+  --padding-block: min(15vh, 10rem);
 
   --section-gap: 5rem;
 
@@ -288,6 +288,8 @@ p > a:visited {
   width: 400px;
   object-fit: cover;
 }
+
+
 // Form
 .form-section {
   position: relative;

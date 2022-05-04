@@ -7,6 +7,7 @@ $backgroundColor: #ffffff;
 $bodyColor: #000000;
 $bodyFont: 'Montserrat',
 sans-serif;
+$titleFont: 'Merienda', cursive;
 
 html {
   height: 100%;
@@ -43,7 +44,6 @@ body {
 section {
   padding-top: 5rem;
   margin-bottom: 4rem;
-
 }
 
 
@@ -74,6 +74,11 @@ p > a:visited {
 //   color: #722F37;
 //   text-decoration: none;
 // }
+
+
+.title-font {
+  font-family: $titleFont;
+}
 
 .clr-accent {
   color: $clr-accent
@@ -449,22 +454,16 @@ textarea {
 
 // Hero
 .bg-hero {
-
-  padding-block: 18rem;
-
+  padding: 8rem 1rem 28rem;
   margin: 0;
 
   background-color: #722F3740;
   color: #0F3815;
 
-  background-image: 
-  url(../../assets/images/wineglass-noback.png),
-  url(../../assets/images/winegrape-noback3.png),
-  url(../../assets/images/grape-vine3.png);
-
-  background-repeat: no-repeat, no-repeat, repeat-x;
-  background-position: left bottom, right top, top;
-  background-size: 25%, 25%, 500px;
+  background-image: url(../../assets/images/vineyard1.jpg);
+  background-position: top;
+  background-size: cover;
+  background-repeat: no-repeat;
 }
 
 .hero-btn {
@@ -488,19 +487,6 @@ textarea {
   padding-inline: 3px;
 }
 
-@media screen and (max-width: 750px) {
-  .bg-hero {
-    background-position: 
-      left top,
-      right bottom,
-      top;
-    background-size: 
-      50%,
-      50%,
-      500px;
-  }
-
-}
 
 
 

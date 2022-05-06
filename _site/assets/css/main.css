@@ -41,7 +41,11 @@ img { border-radius: var(--border-radius); }
 
 .dark-con { background-color: #020917; color: #ffffff; }
 
-p > a:link, p > a:visited { text-decoration: underline; }
+a { color: #006194; }
+
+a:link, a:visited { text-decoration: none; }
+
+a:hover, a:active, a:focus { color: #bb1122; text-decoration: none; }
 
 .title-font { font-family: "Merienda", cursive; }
 

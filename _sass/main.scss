@@ -46,9 +46,6 @@ body {
   --step-5: clamp(3.27rem, calc(2.75rem + 2.56vw), 4.58rem);
 }
 
-section {
-  // padding-top: 5rem;
-}
 
 img {
   border-radius: var(--border-radius);
@@ -65,6 +62,11 @@ img {
   color: #ffffff;
 }
 
+a {
+
+  color: $clr--accent;
+}
+
 // General Links
 // a:visited,
 // a:link {
@@ -72,16 +74,16 @@ img {
 //   text-decoration: none;
 // }
 
-p > a:link,
-p > a:visited {
-  text-decoration: underline;
+a:link,
+a:visited {
+  text-decoration: none;
 }
-// a:hover,
-// a:active,
-// a:focus {
-//   color: #722F37;
-//   text-decoration: none;
-// }
+a:hover,
+a:active,
+a:focus {
+  color:$clr--link;
+  text-decoration: none;
+}
 
 
 .title-font {

@@ -174,7 +174,9 @@ a:focus {
 
 // Hero
 .bg-hero {
-  padding: 8rem 1rem 20rem;
+  display: flex;
+  flex-direction: column;
+  padding: 5rem 1rem 24rem;
   margin: 0;
 
   background-color: #722F3740;
@@ -204,7 +206,7 @@ a:focus {
 }
 
 .bg-text {
-  padding-inline: 3px;
+  padding-inline: 0.25rem;
 }
 
 
@@ -219,7 +221,7 @@ a:focus {
 .media-scroller {
   display: grid;
   grid-auto-flow: column;
-  grid-auto-columns: 84%;
+  grid-auto-columns: 92%;
   gap: var(--border-radius);
 
   overflow-x: auto;

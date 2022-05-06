@@ -296,6 +296,22 @@ p > a:visited {
   object-fit: cover;
 }
 
+.products__title {
+  display: flex;
+  gap: 2rem;
+}
+
+.grape__img {
+  background-image: url(../../assets/images/vineyard4.jpg);
+  height: 20rem;
+}
+
+@media screen and (max-width: 550px) {
+  .products__title {
+    flex-direction: column;
+  }
+}
+
 
 // Form
 .form-section {

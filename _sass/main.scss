@@ -1,8 +1,8 @@
 $clr--dark: #020917;
-$clr-footer: #171c20;
-$clr-wine: #722F37;
-$clr-link: #bb1122;
-$clr-accent: #006194;
+$clr--footer: #171c20;
+$clr--wine: #722F37;
+$clr--link: #bb1122;
+$clr--accent: #006194;
 $backgroundColor: #ffffff;
 $bodyColor: #000000;
 $bodyFont: 'Montserrat',
@@ -28,6 +28,9 @@ body {
   --min-width-l: min(100% - 1rem, 105em, 95vw);
   --min-width-m: min(100% - 1rem, 90em, 90vw);
   --min-width-s: min(100% - 1rem, 50em, 90vw);
+  --min-width-media: min(100% - 1rem, 50em);
+
+  --border-radius: 0.25rem;
 
   --padding-block: min(15vh, 10rem);
 
@@ -44,8 +47,11 @@ body {
 }
 
 section {
-  padding-top: 5rem;
-  margin-bottom: 4rem;
+  // padding-top: 5rem;
+}
+
+img {
+  border-radius: var(--border-radius);
 }
 
 
@@ -83,14 +89,14 @@ p > a:visited {
 }
 
 .clr-accent {
-  color: $clr-accent
+  color: $clr--accent
 }
 
 // General Button
 .btn {
   text-transform: uppercase;
   background-color: #00619465;
-  border-radius: 3px;
+  border-radius: var(--border-radius);
   font-weight: 700;
   border: none;
   padding: 0.25rem 5rem;
@@ -133,7 +139,7 @@ p > a:visited {
   top: 35px;
   height: 2px;
   width: 100%;
-  background-color: $clr-accent;
+  background-color: $clr--accent;
   
   transform: scaleX(0);
   transform-origin: right;
@@ -164,78 +170,77 @@ p > a:visited {
   order: 3;
 }
 
-
 // Hero
-.hero {
-  min-height: 80vh;
-  isolation: isolate;
+.bg-hero {
+  padding: 8rem 1rem 20rem;
+  margin: 0;
 
-  position: relative;
-  // margin-top: 0;
-}
-
-
-.hero-intro {
-  padding-top: 4rem;
-}
-
-.hero-intro::after {
-  content: "";
-  position: absolute;
-  padding: 5rem;
-  // mix-blend-mode: color;
-
-  inset: 0;
-  z-index: -1;
+  background-color: #722F3740;
+  color: #0F3815;
 
   background-image: url(../../assets/images/vineyard1.jpg);
-  background-size: cover;
   background-position: center;
+  background-size: cover;
   background-repeat: no-repeat;
 }
 
-.back-img1 {
-  background-image: url(../../assets/images/vineyard1.jpg);
+.hero-btn {
+  background-color: $clr--wine;
+  border: none;
+  border-radius: var(--border-radius);
+  padding: 1rem 2.3rem;
+  font-size: var(--step-0);
+  text-transform: capitalize;
+  text-decoration: none;
+  color: #fff;
 }
 
-.back-img2 {
-  background-image: url(../../assets/images/vineyard2.jpg);
+.hero-btn:hover,
+.hero-btn:focus {
+  background-color: $clr--accent;
+  color: #000000;
 }
 
-.back-img3 {
-  background-image: url(../../assets/images/vineyard3.jpg);
+.bg-text {
+  padding-inline: 3px;
 }
 
-.back-img4 {
-  background-image: url(../../assets/images/vineyard4.jpg);
-}
 
-.img-logo {
-  width: 90%;
-  max-width: 600px;
-}
 
 // Media Scroller
+
+// .media-scroller {
+//   display: none;
+// }
+
+
 .media-scroller {
   display: grid;
   grid-auto-flow: column;
-  grid-auto-columns: calc(100% - 2rem);
+  grid-auto-columns: 84%;
+  gap: var(--border-radius);
 
   overflow-x: auto;
   overscroll-behavior-inline: contain;
+
+  width: var(--min-width-media);
+  margin-inline: auto;
 }
 
 .media-element {
   display: grid;
   grid-template-rows: min-content;
-  gap: 0.1rem;
+  gap: var(--border-radius);
   align-items: center;
-  padding-bottom: 2rem;
+  padding: 2rem;
+
+  background-color: #e9dcc9;
+  border-radius: var(--border-radius);
 }
 
-.media-element>img {
+.media-element > img {
   inline-size: 100%;
-  height: 500px;
+  aspect-ratio: 16 / 9;
   object-fit: cover;
 }
 
@@ -253,17 +258,19 @@ p > a:visited {
   scroll-snap-align: start;
 }
 
-.centered {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
+@media screen and (max-width: 550px) {
+  .media-element {
+    padding: 1rem;
+    gap: 1rem;
+  }
 }
+
 
 .wine-about__img {
   background-image: url(../../assets/images/winegrape2.jpg);
   height: 20rem;
 }
+
 
 
 // Products
@@ -352,7 +359,7 @@ textarea {
 .form-button {
   text-transform: uppercase;
   background-color: #00619465;
-  border-radius: 3px;
+  border-radius: var(--border-radius);
   font-weight: 700;
   width: 100%;
 }
@@ -373,14 +380,14 @@ textarea {
 
 .form-input:focus::placeholder,
 .form-input:hover::placeholder {
-  color: $clr-accent;
+  color: $clr--accent;
   opacity: 0.85;
 }
 
 
 // Footer
 .site-footer {
-  background-color: $clr-footer;
+  background-color: $clr--footer;
   color: #ffffff;
   margin-top: auto;
 }
@@ -421,7 +428,7 @@ textarea {
   color: #ffffff;
 }
 .social-link:hover {
-  color: $clr-link;
+  color: $clr--link;
 }
 
 
@@ -446,44 +453,6 @@ textarea {
 .bi {
   font-size: var(--step-1);
 }
-
-
-// Hero
-.bg-hero {
-  padding: 8rem 1rem 28rem;
-  margin: 0;
-
-  background-color: #722F3740;
-  color: #0F3815;
-
-  background-image: url(../../assets/images/vineyard1.jpg);
-  background-position: top;
-  background-size: cover;
-  background-repeat: no-repeat;
-}
-
-.hero-btn {
-  background-color: $clr-wine;
-  border: none;
-  border-radius: 4px;
-  padding: 1rem 2.3rem;
-  font-size: var(--step-0);
-  text-transform: capitalize;
-  text-decoration: none;
-  color: #fff;
-}
-
-.hero-btn:hover,
-.hero-btn:focus {
-  background-color: $clr-accent;
-  color: #000000;
-}
-
-.bg-text {
-  padding-inline: 3px;
-}
-
-
 
 
 @media screen and (max-width: 550px) {

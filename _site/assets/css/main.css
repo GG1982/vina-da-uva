@@ -79,7 +79,7 @@ a:hover, a:active, a:focus { color: #bb1122; text-decoration: none; }
 
 .hero-btn { background-color: #722F37; border: none; border-radius: var(--border-radius); padding: 1rem 2.3rem; font-size: var(--step-0); text-transform: capitalize; text-decoration: none; color: #fff; }
 
-.hero-btn:hover, .hero-btn:focus { background-color: #006194; color: #000000; }
+.hero-btn:hover, .hero-btn:focus { background-color: #006194; color: #fff; }
 
 .bg-text { padding-inline: 0.25rem; }
 
@@ -109,11 +109,15 @@ a:hover, a:active, a:focus { color: #bb1122; text-decoration: none; }
 
 .product__img { height: 200px; width: 400px; object-fit: cover; }
 
-.products__title { display: flex; gap: 2rem; }
+.heading { display: flex; flex-direction: column; gap: 3rem; width: var(--min-width-s); margin-inline: auto; }
+
+.heading__title { display: flex; align-items: center; gap: 2rem; }
 
 .grape__img { background-image: url(../../assets/images/vineyard4.jpg); height: 20rem; }
 
-@media screen and (max-width: 550px) { .products__title { flex-direction: column; } }
+.equipment__img { background-image: url(../../assets/images/winegrape1.jpg); height: 20rem; }
+
+@media screen and (max-width: 550px) { .heading__title { flex-direction: column; } .heading__title > img { display: inline-block; text-align: center; } }
 
 .form-section { position: relative; width: 100%; margin: 0; padding-top: var(--padding-block); padding-bottom: var(--padding-block); filter: brightness(0.95); }
 
@@ -418,7 +422,5 @@ p { font-size: var(--step--2); }
 .back { background-size: cover; background-position: center; background-repeat: no-repeat; }
 
 .is-hidden { display: none; }
-
-.equipment__img { background-image: url(../../assets/images/winegrape1.jpg); height: 20rem; }
 
 /*# sourceMappingURL=main.css.map */

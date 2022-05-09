@@ -117,6 +117,8 @@ a:hover, a:active, a:focus { color: #bb1122; text-decoration: none; }
 
 .equipment__img { background-image: url(../../assets/images/winegrape1.jpg); height: 20rem; }
 
+.heading__img { width: 150px; height: auto; }
+
 @media screen and (max-width: 550px) { .heading__title { flex-direction: column; } .heading__title > img { display: inline-block; text-align: center; } }
 
 .form-section { position: relative; width: 100%; margin: 0; padding-top: var(--padding-block); padding-bottom: var(--padding-block); filter: brightness(0.95); }
@@ -147,11 +149,11 @@ textarea { resize: none; }
 
 .site-footer { background-color: #171c20; color: #ffffff; margin-top: auto; }
 
-.footer-container { padding-bottom: 10px; display: grid; row-gap: 2em; column-gap: 10px; grid-template-areas: "logo logo . . ." "pages pages pages social social" "copyright copyright copyright copy-vat copy-vat"; }
+.footer-container { padding-bottom: 10px; display: grid; row-gap: 1em; column-gap: 10px; grid-template-areas: "logo logo . . ." "pages pages pages social social" "copyright copyright copyright copy-vat copy-vat"; }
 
 .footer-logo { grid-area: logo; }
 
-.footer-logo img { max-width: 200px; }
+.footer-logo > img { width: 150px; height: auto; }
 
 .footer-links { grid-area: pages; }
 
@@ -161,13 +163,13 @@ textarea { resize: none; }
 
 .social-link { color: #ffffff; }
 
-.social-link:hover { color: #bb1122; }
+.social-link:hover, .social-link:focus { color: #bb1122; }
 
 .footer-copyright { grid-area: copyright; }
 
 .footer-vat { grid-area: copy-vat; }
 
-.footer-copyright p:first-child, .footer-vat p:first-child { margin-bottom: 10px; }
+.footer-copyright p:first-child, .footer-vat p:first-child { margin-bottom: var(--border-radius); }
 
 .footer-copyright > *, .footer-vat > * { font-size: 12px; }
 
@@ -346,6 +348,8 @@ p { font-size: var(--step--2); }
 .flex-align-end { align-items: flex-end; }
 
 .flex-justify-end { justify-content: flex-end; }
+
+.gap-var { gap: var(--border-radius); }
 
 .gap-1 { gap: 1rem; }
 

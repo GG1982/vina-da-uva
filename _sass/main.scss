@@ -322,6 +322,11 @@ a:focus {
   height: 20rem;
 }
 
+.heading__img {
+  width: 150px;
+  height: auto;
+}
+
 @media screen and (max-width: 550px) {
   .heading__title {
     flex-direction: column;
@@ -435,7 +440,7 @@ textarea {
   padding-bottom: 10px;
 
   display: grid;
-  row-gap: 2em;
+  row-gap: 1em;
   column-gap: 10px;
   grid-template-areas: 
     "logo logo . . ."
@@ -447,8 +452,9 @@ textarea {
 .footer-logo {
   grid-area: logo;
 }
-.footer-logo img {
-  max-width: 200px;
+.footer-logo > img {
+  width: 150px;
+  height: auto;
 }
 
 .footer-links {
@@ -465,10 +471,10 @@ textarea {
 .social-link {
   color: #ffffff;
 }
-.social-link:hover {
+.social-link:hover,
+.social-link:focus {
   color: $clr--link;
 }
-
 
 .footer-copyright {
   grid-area: copyright;
@@ -480,7 +486,7 @@ textarea {
 
 .footer-copyright p:first-child,
 .footer-vat p:first-child {
-  margin-bottom: 10px;
+  margin-bottom: var(--border-radius);
 }
 
 .footer-copyright > *,

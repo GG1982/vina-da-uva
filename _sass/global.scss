@@ -309,6 +309,10 @@ p {
 }
 
 // Gaps 
+.gap-var {
+    gap: var(--border-radius)
+}
+
 .gap-1 {
     gap: 1rem;
 }

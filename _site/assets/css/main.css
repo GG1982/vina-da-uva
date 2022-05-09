@@ -117,7 +117,7 @@ a:hover, a:active, a:focus { color: #bb1122; text-decoration: none; }
 
 .equipment__img { background-image: url(../../assets/images/winegrape1.jpg); height: 20rem; }
 
-.heading__img { width: 150px; height: auto; }
+.heading__img { width: 120px; height: auto; }
 
 @media screen and (max-width: 550px) { .heading__title { flex-direction: column; } .heading__title > img { display: inline-block; text-align: center; } }
 

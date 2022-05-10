@@ -47,7 +47,7 @@ a:link, a:visited { text-decoration: none; }
 
 a:hover, a:active, a:focus { color: #bb1122; text-decoration: none; }
 
-.title-font { font-family: "Merienda", cursive; }
+.title-font { font-family: "Merriweather", serif; }
 
 .clr-accent { color: #006194; }
 
@@ -77,19 +77,17 @@ a:hover, a:active, a:focus { color: #bb1122; text-decoration: none; }
 
 .hero { padding-bottom: 2rem; }
 
-.hero--top { background-color: #e9dcc9; padding: 1rem 0 15rem; }
+.hero--top { background-color: #e9dcc9; padding: 4rem 0 15rem; }
 
 .hero--bottom { margin-top: -10rem; }
 
-.hero__intro { display: grid; grid-template-areas: "title title body"; column-gap: 10px; row-gap: 2rem; }
+.hero__intro { display: grid; grid-template-areas: "title title body"; column-gap: 20px; row-gap: 2rem; }
 
-.bi-arrow-down-right { font-size: var(--step-2); }
-
-.hero__img { max-height: 60vh; object-fit: cover; }
+.hero__img { max-height: 30rem; object-fit: cover; }
 
 .hero--title { grid-area: title; }
 
-.hero--body { position: relative; grid-area: body; max-width: 45ch; align-self: end; }
+.hero--body { position: relative; max-width: 55ch; align-self: end; justify-self: end; grid-area: body; }
 
 .hero--body::before { content: ""; position: absolute; margin-top: -10px; top: 0; left: 0; width: 80px; height: 2px; background-color: #722F37; }
 
@@ -97,7 +95,7 @@ a:hover, a:active, a:focus { color: #bb1122; text-decoration: none; }
 
 .hero__btn { background-color: #000000; color: #fff; padding: 1rem 2rem; width: max-content; text-decoration: none; border-radius: var(--border-radius); text-align: center; font-size: var(--step--1); }
 
-@media screen and (max-width: 700px) { .hero__intro { display: flex; flex-direction: column; gap: 5rem; } .hero--body { align-self: start; } .hero__img { max-height: 300px; object-fit: cover; } }
+@media screen and (max-width: 700px) { .hero__intro { display: flex; flex-direction: column; gap: 5rem; } .hero--top { padding: 1rem 0 8rem; } .hero--body { align-self: start; } .hero__img { display: none; } .media-scroller { margin-top: 10rem; } }
 
 .media-scroller { display: grid; grid-auto-flow: column; grid-auto-columns: 92%; gap: var(--border-radius); overflow-x: auto; overscroll-behavior-inline: contain; width: var(--min-width-media); margin-inline: auto; }
 

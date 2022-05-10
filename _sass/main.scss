@@ -8,7 +8,8 @@ $backgroundColor: #ffffff;
 $bodyColor: #000000;
 $bodyFont: 'Montserrat',
 sans-serif;
-$titleFont: 'Merienda', cursive;
+$titleFont: 'Merriweather',
+serif;
 
 html {
   height: 100%;
@@ -73,7 +74,7 @@ a {
 // a:link {
 //   color: #722F37;
 //   text-decoration: none;
-// }
+// }    
 
 a:link,
 a:visited {
@@ -174,17 +175,14 @@ a:focus {
 }
 
 
-// HERO DEMO
-
+// Hero
 .hero {
   padding-bottom: 2rem;
 }
-
 .hero--top {
   background-color: $clr--hero;
-  padding: 1rem 0 15rem;
+  padding: 4rem 0 15rem;
 }
-
 .hero--bottom {
   margin-top: -10rem;
 }
@@ -195,15 +193,12 @@ a:focus {
   grid-template-areas: 
   "title title body";
 
-  column-gap: 10px;
+  column-gap: 20px;
   row-gap: 2rem;
-}
-.bi-arrow-down-right {
-  font-size: var(--step-2);
 }
 
 .hero__img {
-  max-height: 60vh;
+  max-height: 30rem;
   object-fit: cover;
 }
 
@@ -213,9 +208,11 @@ a:focus {
 
 .hero--body {
   position: relative;
-  grid-area: body;
-  max-width: 45ch;
+  max-width: 55ch;
   align-self: end;
+  justify-self: end;
+
+  grid-area: body;
 }
 .hero--body::before {
   content: "";
@@ -258,14 +255,19 @@ a:focus {
     flex-direction: column;
     gap: 5rem;
   }
-
+  .hero--top {
+    padding: 1rem 0 8rem;
+  }
   .hero--body {
     align-self: start;
   }
 
   .hero__img {
-    max-height: 300px;
-    object-fit: cover;
+    display: none;
+  }
+
+  .media-scroller {
+    margin-top: 10rem;
   }
 }
 

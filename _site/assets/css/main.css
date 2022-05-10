@@ -77,7 +77,7 @@ a:hover, a:active, a:focus { color: #bb1122; text-decoration: none; }
 
 .hero { padding-bottom: 2rem; }
 
-.hero--top { background-color: #e9dcc9; padding: 1rem 0 18rem; }
+.hero--top { background-color: #e9dcc9; padding: 1rem 0 15rem; }
 
 .hero--bottom { margin-top: -10rem; }
 

@@ -89,9 +89,9 @@ a:hover, a:active, a:focus { color: #bb1122; text-decoration: none; }
 
 .hero--body { position: relative; max-width: 55ch; align-self: end; justify-self: end; grid-area: body; }
 
-.hero--body::before { content: ""; position: absolute; margin-top: -10px; top: 0; left: 0; width: 80px; height: 2px; background-color: #722F37; }
+.hero--body::before { content: ""; position: absolute; margin-top: -10px; top: 0; left: 0; width: 120px; height: 2px; background-color: #722F37; }
 
-.hero--body::after { content: ""; position: absolute; margin-bottom: -10px; bottom: 0; left: 0; width: 80px; height: 2px; background-color: #722F37; }
+.hero--body::after { content: ""; position: absolute; margin-bottom: -10px; bottom: 0; left: 0; width: 120px; height: 2px; background-color: #722F37; }
 
 .hero__btn { background-color: #000000; color: #fff; padding: 1rem 2rem; width: max-content; text-decoration: none; border-radius: var(--border-radius); text-align: center; font-size: var(--step--1); }
 

@@ -191,9 +191,9 @@ a:focus {
   display: grid;
 
   grid-template-areas: 
-  "title title body";
+  "title body";
 
-  column-gap: 20px;
+  column-gap: 3rem;
   row-gap: 2rem;
 }
 

@@ -81,7 +81,7 @@ a:hover, a:active, a:focus { color: #bb1122; text-decoration: none; }
 
 .hero--bottom { margin-top: -10rem; }
 
-.hero__intro { display: grid; grid-template-areas: "title title body"; column-gap: 20px; row-gap: 2rem; }
+.hero__intro { display: grid; grid-template-areas: "title body"; column-gap: 3rem; row-gap: 2rem; }
 
 .hero__img { max-height: 30rem; object-fit: cover; }
 

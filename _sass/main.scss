@@ -327,7 +327,8 @@ a:focus {
     gap: 1rem;
   }
   .media-conatiner {
-    padding-block: var(--border-radius);
+    padding-top: var(--border-radius);
+    padding-bottom: var(--border-radius);
     padding-left: var(--border-radius);
   }
 }

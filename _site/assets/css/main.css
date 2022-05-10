@@ -109,7 +109,7 @@ a:hover, a:active, a:focus { color: #bb1122; text-decoration: none; }
 
 .snaps-inline > * { scroll-snap-align: start; }
 
-@media screen and (max-width: 700px) { .media-element { padding: 1rem; gap: 1rem; } .media-conatiner { padding-block: var(--border-radius); padding-left: var(--border-radius); } }
+@media screen and (max-width: 700px) { .media-element { padding: 1rem; gap: 1rem; } .media-conatiner { padding-top: var(--border-radius); padding-bottom: var(--border-radius); padding-left: var(--border-radius); } }
 
 .wine-about__img { background-image: url(../../assets/images/winegrape2.jpg); height: 20rem; }
 

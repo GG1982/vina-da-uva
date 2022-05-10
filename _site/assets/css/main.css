@@ -139,9 +139,9 @@ a:hover, a:active, a:focus { color: #bb1122; text-decoration: none; }
 
 .form-section::after { content: ""; position: absolute; background-image: url(../../assets/images/vineyard4.jpg); background-position: center; background-repeat: no-repeat; background-size: cover; left: 0; top: 0; width: 100%; height: 100%; filter: blur(4px); z-index: -1; }
 
-.form-container { background-color: #fff; box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px; display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); }
+.form-container { background-color: #fff; box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px; border-radius: var(--border-radius); display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); }
 
-.form-img { background-image: url(../../assets/images/vineyard4.jpg); min-height: 200px; }
+.form-img { background-image: url(../../assets/images/vineyard4.jpg); min-height: 200px; border-radius: var(--border-radius); }
 
 .form { padding: 1rem; }
 

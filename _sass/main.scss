@@ -48,6 +48,11 @@ body {
   --step-5: clamp(3.27rem, calc(2.75rem + 2.56vw), 4.58rem);
 }
 
+:focus {
+  outline: 3px solid $clr--accent;
+  outline-offset: 4px;
+}
+
 
 img {
   border-radius: var(--border-radius);
@@ -65,7 +70,6 @@ img {
 }
 
 a {
-
   color: $clr--accent;
 }
 
@@ -119,10 +123,27 @@ a:focus {
 
 // Nav
 .header {
+  display: flex;
+  justify-content: space-between;
+
   padding: 1rem 0 2rem;
   flex-wrap: wrap;
   background-color: $clr--hero;
 }
+
+
+.nav {
+  position: fixed;
+  background-color: $clr--dark;
+  color: #fff;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: 100;
+}
+
+
 
 .logo {
   text-align: center;

@@ -1,5 +1,5 @@
-$clr--dark: #020917;
-$clr--footer: #171c20;
+$clr--footer: #020917;
+$clr--dark: #171c20;
 $clr--wine: #722F37;
 $clr--link: #bb1122;
 $clr--accent: #006194;
@@ -448,7 +448,6 @@ a:focus {
 .form-img {
   background-image: url(../../assets/images/vineyard4.jpg);
   min-height: 200px;
-  border-radius: var(--border-radius);
 }
 .form {
   padding: 1rem;

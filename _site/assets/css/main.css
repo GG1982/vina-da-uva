@@ -39,7 +39,7 @@ img { border-radius: var(--border-radius); }
 
 .mobile-only { display: none; }
 
-.dark-con { background-color: #020917; color: #ffffff; }
+.dark-con { background-color: #171c20; color: #ffffff; }
 
 a { color: #006194; }
 
@@ -141,7 +141,7 @@ a:hover, a:active, a:focus { color: #bb1122; text-decoration: none; }
 
 .form-container { background-color: #fff; box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px; border-radius: var(--border-radius); display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); }
 
-.form-img { background-image: url(../../assets/images/vineyard4.jpg); min-height: 200px; border-radius: var(--border-radius); }
+.form-img { background-image: url(../../assets/images/vineyard4.jpg); min-height: 200px; }
 
 .form { padding: 1rem; }
 
@@ -161,7 +161,7 @@ textarea { resize: none; }
 
 .form-input:focus::placeholder, .form-input:hover::placeholder { color: #006194; opacity: 0.85; }
 
-.site-footer { background-color: #171c20; color: #ffffff; margin-top: auto; }
+.site-footer { background-color: #020917; color: #ffffff; margin-top: auto; }
 
 .footer-container { padding-bottom: 10px; display: grid; row-gap: 1em; column-gap: 10px; grid-template-areas: "logo logo . . ." "pages pages pages social social" "copyright copyright copyright copy-vat copy-vat"; }
 

@@ -109,26 +109,6 @@ a:focus {
   color: $clr--accent
 }
 
-// General Button
-.btn {
-  text-transform: uppercase;
-  background-color: #00619465;
-  border-radius: var(--border-radius);
-  font-weight: 700;
-  border: none;
-  padding: 0.25rem 5rem;
-  font-weight: 700;
-}
-// Links inside btn
-.btn a {
-  color: #000000;
-}
-
-.btn:focus,
-.btn:hover {
-  background-color: #00619490;
-}
-
 
 // Nav
 .header {
@@ -209,6 +189,10 @@ a:focus {
 
 
 @media screen and (max-width: 600px) {
+
+  .header {
+    padding: 1rem 0 2rem;
+  }
 
   .nav__toggle {
     display: flex;

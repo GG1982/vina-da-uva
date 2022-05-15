@@ -33,7 +33,7 @@ html { height: 100%; }
 
 body { background: #ffffff; color: #000000; font-family: "Montserrat", sans-serif; display: flex; flex-direction: column; height: 100%; }
 
-:root { --min-width-l: min(100% - 1rem, 105em, 95vw); --min-width-m: min(100% - 1rem, 90em, 90vw); --min-width-s: min(100% - 1rem, 50em, 90vw); --min-width-media: min(100%, 50em); --border-radius: 0.25rem; --padding-block: min(15vh, 10rem); --section-gap: 5rem; --step--2: clamp(1rem, calc(1rem + 0.10vw), 1.14rem); --step--1: clamp(1.09rem, calc(1.05rem + 0.21vw), 1.20rem); --step-0: clamp(1.31rem, calc(1.24rem + 0.37vw), 1.50rem); --step-1: clamp(1.58rem, calc(1.46rem + 0.59vw), 1.88rem); --step-2: clamp(1.89rem, calc(1.71rem + 0.89vw), 2.34rem); --step-3: clamp(2.27rem, calc(2.01rem + 1.29vw), 2.93rem); --step-4: clamp(2.72rem, calc(2.36rem + 1.83vw), 3.66rem); --step-5: clamp(3.27rem, calc(2.75rem + 2.56vw), 4.58rem); }
+:root { --min-width-l: min(100% - 1rem, 105em, 95vw); --min-width-m: min(100% - 1rem, 90em, 90vw); --min-width-s: min(100% - 1rem, 50em, 90vw); --min-width-media: min(100%, 50em); --border-radius: 0.25rem; --padding-block: min(15vh, 10rem); --section-gap: 5rem; --img-height: 15rem; --step--2: clamp(1rem, calc(1rem + 0.10vw), 1.14rem); --step--1: clamp(1.09rem, calc(1.05rem + 0.21vw), 1.20rem); --step-0: clamp(1.31rem, calc(1.24rem + 0.37vw), 1.50rem); --step-1: clamp(1.58rem, calc(1.46rem + 0.59vw), 1.88rem); --step-2: clamp(1.89rem, calc(1.71rem + 0.89vw), 2.34rem); --step-3: clamp(2.27rem, calc(2.01rem + 1.29vw), 2.93rem); --step-4: clamp(2.72rem, calc(2.36rem + 1.83vw), 3.66rem); --step-5: clamp(3.27rem, calc(2.75rem + 2.56vw), 4.58rem); }
 
 :focus { outline: 3px solid #006194; outline-offset: 4px; }
 
@@ -42,6 +42,8 @@ img { border-radius: var(--border-radius); }
 .mobile-only { display: none; }
 
 .dark-con { background-color: #171c20; color: #ffffff; }
+
+.site-con { background-color: #e9dcc9; }
 
 a { color: #006194; }
 
@@ -59,7 +61,7 @@ a:hover, a:active, a:focus { color: #bb1122; text-decoration: none; }
 
 .btn:focus, .btn:hover { background-color: #00619490; }
 
-.header { padding: 1rem 0 2rem; background-color: #e9dcc9; }
+.header { padding: 1rem 0 1rem; background-color: #e9dcc9; }
 
 .nav__container { width: var(--min-width-s); margin-inline: auto; display: flex; }
 
@@ -93,15 +95,15 @@ a:hover, a:active, a:focus { color: #bb1122; text-decoration: none; }
 
 .hero--title { grid-area: title; }
 
-.hero--body { position: relative; max-width: 55ch; align-self: end; justify-self: end; grid-area: body; }
+.hero__body { position: relative; max-width: 55ch; align-self: end; justify-self: end; grid-area: body; }
 
-.hero--body::before { content: ""; position: absolute; margin-top: -10px; top: 0; left: 0; width: 120px; height: 2px; background-color: #722F37; }
+.hero__body::before { content: ""; position: absolute; margin-top: -10px; top: 0; left: 0; width: 120px; height: 2px; background-color: #722F37; }
 
-.hero--body::after { content: ""; position: absolute; margin-bottom: -10px; bottom: 0; left: 0; width: 120px; height: 2px; background-color: #722F37; }
+.hero__body::after { content: ""; position: absolute; margin-bottom: -10px; bottom: 0; left: 0; width: 120px; height: 2px; background-color: #722F37; }
 
 .hero__btn { background-color: #000000; color: #fff; padding: 1rem 2rem; width: max-content; text-decoration: none; border-radius: var(--border-radius); text-align: center; font-size: var(--step--1); }
 
-@media screen and (max-width: 700px) { .hero { padding-bottom: 0; } .hero__intro { display: flex; flex-direction: column; gap: 5rem; padding-bottom: 2rem; } .hero--top { padding: 0; } .hero--bottom { margin-top: 0; } .hero--body { align-self: start; } .hero__img { display: none; } }
+@media screen and (max-width: 700px) { .hero { padding-bottom: 0; } .hero__intro { display: flex; flex-direction: column; gap: 5rem; padding-bottom: 2rem; } .hero--top { padding: 0; } .hero--bottom { margin-top: 0; } .hero__body { align-self: start; } .hero__img { display: none; } }
 
 .media-conatiner { padding-bottom: 2rem; }
 
@@ -117,7 +119,7 @@ a:hover, a:active, a:focus { color: #bb1122; text-decoration: none; }
 
 @media screen and (max-width: 700px) { .media-element { padding: 1rem; gap: 1rem; } .media-conatiner { padding-top: 2rem; padding-bottom: 2rem; padding-left: var(--border-radius); } }
 
-.wine-about__img { background-image: url(../../assets/images/winegrape2.jpg); height: 20rem; }
+.wine-about__img { background-image: url(../../assets/images/winegrape2.jpg); height: var(--img-height); }
 
 .product__img-1 { background-image: url(../../assets/images/montepulciano1.jpg); }
 
@@ -133,11 +135,11 @@ a:hover, a:active, a:focus { color: #bb1122; text-decoration: none; }
 
 .heading__title { display: flex; align-items: center; gap: 2rem; }
 
-.grape__img { background-image: url(../../assets/images/vineyard4.jpg); height: 20rem; }
+.grape__img { background-image: url(../../assets/images/vineyard4.jpg); height: var(--img-height); }
 
-.equipment__img { background-image: url(../../assets/images/winegrape1.jpg); height: 20rem; }
+.equipment__img { background-image: url(../../assets/images/winegrape1.jpg); height: var(--img-height); }
 
-.heading__img { width: 120px; height: auto; }
+.heading__img { width: 120px; height: auto; filter: drop-shadow(2px 2px 1px #000); }
 
 @media screen and (max-width: 550px) { .heading__title { flex-direction: column; } .heading__title > img { display: inline-block; text-align: center; } }
 

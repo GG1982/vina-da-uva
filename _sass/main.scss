@@ -30,6 +30,8 @@ body {
   --min-width-l: min(100% - 1rem, 105em, 95vw);
   --min-width-m: min(100% - 1rem, 90em, 90vw);
   --min-width-s: min(100% - 1rem, 50em, 90vw);
+
+  --min-width-pages: min(100% - 1rem, 70em, 90vw);
   --min-width-media: min(100%, 50em);
 
 
@@ -188,7 +190,7 @@ a:focus {
 }
 
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 650px) {
 
   .header {
     padding: 1rem 0 2rem;
@@ -214,6 +216,11 @@ a:focus {
 
   .nav__item {
     text-align: center;
+  }
+
+  .nav__link {
+    display: flex;
+    justify-content: center;
   }
 
   .nav__list.active {
@@ -413,21 +420,41 @@ a:focus {
 }
 
 
-// Pages
+// Secondary Pages
 
-.heading {
+.page {
   display: flex;
   flex-direction: column;
-  gap: 3rem;
-  width: var(--min-width-s);
+  width: var(--min-width-pages);
   margin-inline: auto;
+  gap: 2rem;
+  padding-bottom: 2rem;
+}
+.page h1 {
+  font-size: var(--step-4);
+  text-transform: capitalize;
+}
+.page h2 {
+  font-size: var(--step-2);
+  text-transform: capitalize;
+}
+
+.page > p {
+  font-size: var(--step--1);
 }
 
 
-.heading__title {
+.page__title {
   display: flex;
   align-items: center;
+  justify-content: space-between;
   gap: 2rem;
+}
+
+.page__img {
+  width: 100px;
+  height: auto;
+  filter: drop-shadow(2px 2px 1px #000);
 }
 
 .grape__img {
@@ -435,24 +462,20 @@ a:focus {
   height: var(--img-height);
 }
 
-.equipment__img {
-  background-image: url(../../assets/images/winegrape1.jpg);
+.tools__img {
+  background-image: url(../../assets/images/vineyard2.jpg);
   height: var(--img-height);
 }
 
-.heading__img {
-  width: 120px;
-  height: auto;
-  filter: drop-shadow(2px 2px 1px #000);
-}
+
 
 @media screen and (max-width: 550px) {
-  .heading__title {
+  .page__title {
     flex-direction: column;
     // align-items: flex-start;
   }
 
-  .heading__title > img {
+  .page__title > img {
     display: inline-block;
     text-align: center;
   }

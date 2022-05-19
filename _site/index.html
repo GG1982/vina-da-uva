@@ -15,42 +15,23 @@
 </head>
 
 <body>
-  <!-- <header class="header">
-    <div class="logo capitalize">Vino da Uva</div>
-        <button class="mobile-only nav-toggle" aria-label="toggle navigation">
-            <span class="hamburger"></span>
-        </button>    
-        <nav class="nav">
-            <ul class="nav-list font--1 capitalize">
-                <li><a href="https://gg1982.github.io/vina-da-uva/" class="nav-link">Home</a></li>
-                <li><a href="https://gg1982.github.io/vina-da-uva/#about-us" class="nav-link">About</a></li>
-                <li><a href="https://gg1982.github.io/vina-da-uva/#contact" class="nav-link">Contact</a></li>
-                <li><a href="https://gg1982.github.io/vina-da-uva/grapes" class="nav-link">Grapes</a></li>
-                <li><a href="https://gg1982.github.io/vina-da-uva/equipment.html" class="nav-link">tools</a></li>
-                <li><a href="https://gg1982.github.io/vina-da-uva/equipment.html" class="nav-link">tools</a></li>
-            </ul>
-        </nav>
-</header> -->
-
-
-
-
-<header class="header">
+  <header class="header">
     <section class="nav__container">
-        <nav class="nav">
-            <div class="logo">
-                <a href="https://gg1982.github.io/vina-da-uva/" class="nav__logo">
-                    <img src="assets/images/logoblack.png" alt="">
-                </a>
-            </div>
-
-            <a class="nav__toggle" aria-label="toggle navigation">
-                <span class="hamburger"></span>
-                <span class="hamburger"></span>
-                <span class="hamburger"></span>
+        <div class="logo">
+            <a href="https://gg1982.github.io/vina-da-uva/" class="nav__logo">
+                <img src="assets/images/logoblack.png" alt="">
             </a>
-        
-            <ul class="nav__list font--1 capitalize">
+        </div>
+
+        <button class="mobile-nav-toggle" 
+        aria-controls="nav__list" aria-expanded="false">
+            <span class="sr-only">Menu</span>
+            <span class="hamburger"></span>
+        </button>
+
+
+        <nav class="nav">        
+            <ul class="nav__list font--1 capitalize" id="nav__list" data-visible="false">
                 <li class="nav__item"><a href="https://gg1982.github.io/vina-da-uva/" class="nav__link">Home</a></li>
                 <li class="nav__item"><a href="https://gg1982.github.io/vina-da-uva/#about-us" class="nav__link">About</a></li>
                 <li class="nav__item"><a href="https://gg1982.github.io/vina-da-uva/grapes" class="nav__link">grapes</a></li>
@@ -60,6 +41,7 @@
         </nav>
     </section>
 </header>
+
     <section class="hero"> 
 
     <div class="hero--top">

@@ -6,8 +6,8 @@
 }
 
 /* Remove default padding */
-ul[class],
-ol[class] {
+ul,
+ol {
     padding: 0;
 }
 
@@ -72,6 +72,17 @@ select {
 
 button {
     cursor: pointer;
+}
+
+// Screen-reader Only
+.sr-only:not(:focus):not(:active) {
+    clip: rect(0 0 0 0);
+    clip-path: inset(50%);
+    height: 1px;
+    overflow: hidden;
+    position: absolute;
+    white-space: nowrap;
+    width: 1px;
 }
 
 /* Remove all animations and transitions for people that prefer not to see them */

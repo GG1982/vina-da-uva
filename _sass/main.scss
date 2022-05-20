@@ -264,24 +264,28 @@ a:focus {
 
   position: relative;
 }
-.nav__link::after {
-  content: "";
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  top: 35px;
-  height: 2px;
-  width: 100%;
-  background-color: $clr--accent;
 
-  transform: scaleX(0);
-  transform-origin: right;
-  transition: transform 150ms ease-out;
-}
-.nav__link:hover::after,
-.nav__link:focus::after {
-  transform: scaleX(1);   
-  transform-origin: left;
+@media (hover: hover) and (min-width: 800px) {
+  .nav__link::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    top: 35px;
+    height: 2px;
+    width: 100%;
+    background-color: $clr--accent;
+
+    transform: scaleX(0);
+    transform-origin: right;
+    transition: transform 150ms ease-out;
+  }
+  
+  .nav__link:hover::after,
+  .nav__link:focus::after {
+    transform: scaleX(1);
+    transform-origin: left;
+  }
 }
 
 
@@ -304,12 +308,10 @@ a:focus {
   .header {
       padding: 1rem 0 2rem;
     }
-
-
   .nav__list {
     position: fixed;
     z-index: 1000;
-    inset: 0 0 0 30%;
+    inset: 0 0 0 40%;
 
     padding: var(--padding-block-nav) 2rem;
     background-color: hsl(207, 16%, 11%); //$clr--dark
@@ -333,13 +335,15 @@ a:focus {
   // }
 
   .nav__link {
-    color: #fff
+    display: flex;
+    color: #fff;
+    width: 100%;
   }
 
   .mobile-nav-toggle {
     position: absolute;
-    top: 1rem;
-    right: 0.5rem;
+    top: 1.5rem;
+    right: 1rem;
     display: flex;
     flex-direction: column;
     justify-content: center;

@@ -6,39 +6,37 @@
 //     navList.classList.toggle('active')
 // })
 const navContainer = document.querySelector('.nav__container')
-const nav = document.querySelector('.nav__list')
+const navList = document.querySelector('.nav__list')
 const navToggle = document.querySelector('.mobile-nav-toggle')
+const hamburger = document.querySelector('.hamburger')
+const navLink = Array.from(document.querySelectorAll('.nav__link'))
 
-let menuOpen = false
 
 navToggle.addEventListener('click', () => {
-    document.body.classList.toggle('active')
+    navContainer.classList.toggle('active')
 
-    const visibility = nav.getAttribute('data-visible')
+    // Aria label. Tell sr if menu is open
+    const visibility = navList.getAttribute('data-visible')
     if (visibility === "false") {
-        nav.setAttribute('data-visible', true)
+        navList.setAttribute('data-visible', true)
         navToggle.setAttribute('aria-expanded', true)
     } else {
-        nav.setAttribute('data-visible', false)
+        navList.setAttribute('data-visible', false)
         navToggle.setAttribute('aria-expanded', false)
     }
 })
 
-// document.body.addEventListener('click', () => {
-//     console.log(nav)
-// })
+navLink.forEach(link => {
+    link.addEventListener('click', () => {
+        navContainer.classList.toggle('active')
+    })
+})
 
+document.body.addEventListener('click', (e) => {
+    if (e.target !== navList && e.target !== navToggle && e.target !== hamburger) {
+        navContainer.classList.remove('active')
+    }
+})
 
-
-
-// navToggle.addEventListener('click', () => {
-//     const visibility = nav.getAttribute('data-visible')
-//     if(visibility === "false") {
-//         nav.setAttribute('data-visible', true)
-//         navToggle.setAttribute('aria-expanded', true)
-//     } else if (visibility === "true") {
-//         nav.setAttribute('data-visible', false)
-//         navToggle.setAttribute('aria-expanded', false)
-//     }
-
-// })
+console.log(navList)
+console.log(navToggle)

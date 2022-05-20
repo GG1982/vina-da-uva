@@ -53,6 +53,8 @@ a:link, a:visited { text-decoration: none; }
 
 a:hover, a:active, a:focus { color: #bb1122; text-decoration: none; }
 
+p > a:link { text-decoration: underline; }
+
 .title-font { font-family: "Merriweather", serif; }
 
 .clr-accent { color: #006194; }
@@ -142,6 +144,8 @@ a:hover, a:active, a:focus { color: #bb1122; text-decoration: none; }
 .grape__img { background-image: url(../../assets/images/vineyard4.jpg); height: var(--img-height); }
 
 .tools__img { background-image: url(../../assets/images/vineyard2.jpg); height: var(--img-height); }
+
+.thanks__img { background-image: url(../../assets/images/vineyard1.jpg); height: var(--img-height); }
 
 @media screen and (max-width: 550px) { .page__intro { flex-direction: column-reverse; } .page__title { flex-direction: column; text-align: center; } .page__title > img { display: inline-block; text-align: center; } }
 

@@ -662,11 +662,11 @@ textarea {
   padding-bottom: 10px;
 
   display: grid;
-  row-gap: 1em;
+  row-gap: 1.5rem;
   column-gap: 10px;
   grid-template-areas: 
     "logo logo . . ."
-    "pages pages pages social social"
+    "pages pages . social social"
     "copyright copyright copyright copy-vat copy-vat";
 }
 

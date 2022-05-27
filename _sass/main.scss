@@ -128,7 +128,7 @@ p > a:link {
 
 .nav__container {
   display: flex;
-  width: var(--min-width-s);
+  width: var(--min-width-pages);
   margin-inline: auto;
 }
 
@@ -141,8 +141,6 @@ p > a:link {
   align-items: center;
   justify-content: flex-end;
   width: 100%;
-
-  // position: fixed;
 }
 
 .nav__link {
@@ -186,11 +184,11 @@ p > a:link {
 }
 .nav__list {
   display: flex;
-  gap: 2rem;
+  gap: 3rem;
 }
 
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 800px) {
 
   .header {
     padding: 1rem 0 2rem;

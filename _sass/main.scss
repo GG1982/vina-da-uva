@@ -141,6 +141,8 @@ p > a:link {
   align-items: center;
   justify-content: flex-end;
   width: 100%;
+
+  // position: fixed
 }
 
 .nav__link {
@@ -269,6 +271,8 @@ p > a:link {
 
   .active {
     --animate-menu: 2rem;
+  }
+  .overflow-hidden {
     overflow: hidden;
   }
   .active .nav__list {

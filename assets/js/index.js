@@ -38,5 +38,3 @@ document.body.addEventListener('click', (e) => {
     }
 })
 
-console.log(navList)
-console.log(navToggle)

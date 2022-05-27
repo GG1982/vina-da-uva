@@ -193,8 +193,9 @@ p > a:link {
 @media screen and (max-width: 600px) {
 
   .header {
-      padding: 1rem 0 2rem;
-    }
+    padding: 1rem 0 2rem;
+  }
+
   .nav__list {
     position: fixed;
     z-index: 1000;
@@ -215,11 +216,6 @@ p > a:link {
       backdrop-filter: blur(1rem);
     }
   }
-
-
-  // .nav__list[data-visible="true"] {
-  //   transform: translateX(0%);
-  // }
 
   .nav__link {
     display: flex;
@@ -595,7 +591,7 @@ p > a:link {
   border-radius: var(--border-radius);
 
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(Min(300px, 100%), 1fr));
 }
 
 .form-img {

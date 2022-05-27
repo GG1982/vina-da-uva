@@ -1,0 +1,143 @@
+
+.faq-container {
+    width: var(--min-width-l);
+    margin-inline: auto;
+
+    padding-block: 5rem;
+
+    display: grid;
+    grid-template-columns: 25ch 1fr;
+}
+.faq-nav {
+    position: sticky;
+    top: 25px;
+    height: fit-content;
+}
+
+.faq-nav__list {
+    position: relative;
+
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.faq-nav__list::before {
+    content: "";
+    position: absolute;
+    background-color: $clr--dark;
+
+    left: -8px;
+    width: 1px;
+    height: 100%;
+}
+.faq-nav__link {
+    cursor: pointer;
+}
+
+.faq-section--container {
+    display: flex;
+    flex-direction: column;
+    gap: 5rem;
+}
+.faq-section {
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+    padding-block: 1rem;
+    padding-inline: 2rem;  
+    border-radius: var(--border-radius);
+}
+.faq-title {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 1rem;
+}
+.faq-title-toggle {
+    width: 2rem;
+    height: 2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border: none;
+
+    background-color: transparent;
+
+    position: relative;
+}
+.bi-plus-lg {
+    font-size: 2rem;
+}
+.bi-dash-lg {
+    display: none;
+    font-size: 2rem;
+}
+
+
+.faq-answers {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(Min(450px, 100%), 1fr));
+    column-gap: 2rem;
+    row-gap: 3.5rem;
+    padding-block: 3rem;
+}
+.faq-answers > div {
+    display: flex;
+    flex-direction: column;
+    gap: 0.4rem;
+}
+
+.faq-answers h3 {
+    font-weight: 700;
+}
+
+.faq-answers p {
+    color: #8b8784;
+}
+.faq-title-toggle {
+    display: none;
+}
+
+
+
+
+@media screen and (max-width: 700px) {
+    .faq-container {
+        grid-template-columns: 1fr;
+    }
+
+    .faq-section--container {
+        gap: 2rem;
+    }
+    .faq-section {
+        padding: 1rem;
+    }
+    .faq-nav {
+        display: none;
+    }
+
+    .faq-title > h2 {
+        font-size: var(--step--1);
+    }
+
+    .faq-answers {
+        display: none;
+    }
+
+    .faq-active {
+        display: flex;
+        flex-direction: column;
+    }
+    .faq-title-toggle {
+        display: block;
+    }
+    .faq-active .bi-plus-lg  {
+        display: none;
+    }
+
+    .faq-active .bi-dash-lg {
+        display: block;
+    }
+
+
+}

@@ -487,6 +487,6 @@ p { font-size: var(--step--2); }
 
 .faq-title-toggle { display: none; }
 
-@media screen and (max-width: 700px) { .faq-container { grid-template-columns: 1fr; } .faq-section--container { gap: 2rem; } .faq-section { padding: 1rem; } .faq-nav { display: none; } .faq-title > h2 { font-size: var(--step--1); } .faq-answers { display: none; } .faq-active { display: flex; flex-direction: column; } .faq-title-toggle { display: block; } .faq-active .bi-plus-lg { display: none; } .faq-active .bi-dash-lg { display: block; } }
+@media screen and (max-width: 700px) { .faq-container { grid-template-columns: 1fr; } .faq-section--container { gap: 2rem; } .faq-section { padding: 1rem; } .faq-nav { display: none; } .faq-title > h2 { font-size: var(--step--1); } .faq-answers { display: none; } .faq-active { display: grid; } .faq-title-toggle { display: flex; } .faq-active .bi-plus-lg { display: none; } .faq-active .bi-dash-lg { display: block; } }
 
 /*# sourceMappingURL=main.css.map */

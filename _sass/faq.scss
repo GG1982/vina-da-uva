@@ -125,11 +125,10 @@
     }
 
     .faq-active {
-        display: flex;
-        flex-direction: column;
+        display: grid;
     }
     .faq-title-toggle {
-        display: block;
+        display: flex;
     }
     .faq-active .bi-plus-lg  {
         display: none;

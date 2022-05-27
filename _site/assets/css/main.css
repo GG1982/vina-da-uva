@@ -67,7 +67,7 @@ p > a:link { text-decoration: underline; }
 
 .nav { display: flex; align-items: center; justify-content: flex-end; width: 100%; }
 
-.nav__link { text-decoration: none; color: #722F37; position: relative; }
+.nav__link { text-decoration: none; color: #000; position: relative; }
 
 @media (hover: hover) and (min-width: 800px) { .nav__link::after { content: ""; position: absolute; bottom: 0; left: 0; top: 35px; height: 2px; width: 100%; background-color: #006194; transform: scaleX(0); transform-origin: right; transition: transform 150ms ease-out; } .nav__link:hover::after, .nav__link:focus::after { transform: scaleX(1); transform-origin: left; } }
 

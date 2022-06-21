@@ -177,8 +177,8 @@ p > a:link {
 
 
 .logo {
-  font-size: var(--step-1);
-  max-width: 150px;
+  // font-size: var(--step-1);
+  max-width: Min(250px, 60%);
 }
 
 .mobile-nav-toggle {
@@ -225,7 +225,7 @@ p > a:link {
 
   .mobile-nav-toggle {
     position: absolute;
-    top: 1.5rem;
+    top: 2rem;
     right: 1rem;
     display: flex;
     flex-direction: column;

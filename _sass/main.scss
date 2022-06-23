@@ -124,6 +124,8 @@ p > a:link {
 .header {
   padding: 1rem 0 1rem;
   background-color: $clr--hero;
+  position: fixed;
+  z-index: 1000;
 }
 
 .nav__container {
@@ -175,9 +177,7 @@ p > a:link {
   }
 }
 
-
 .logo {
-  // font-size: var(--step-1);
   max-width: Min(250px, 60%);
 }
 
@@ -299,7 +299,7 @@ p > a:link {
 }
 .hero--top {
   background-color: $clr--hero;
-  padding: 4rem 0 15rem;
+  padding: 10rem 0 15rem;
 }
 .hero--bottom {
   margin-top: -10rem;
@@ -488,6 +488,8 @@ p > a:link {
 .page__intro {
   display: flex;
   flex-direction: column;
+  background-color: $clr--hero;
+  padding-top: 6rem;
 }
 
 
@@ -658,8 +660,8 @@ textarea {
 }
 
 .footer-container {
-  // padding-block: 1rem;
-  padding-bottom: 10px;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
 
   display: grid;
   row-gap: 1.5rem;

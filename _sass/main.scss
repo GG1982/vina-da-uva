@@ -36,6 +36,7 @@ body {
   --min-width-pages: min(100% - 1rem, 65em, 90vw);
   --min-width-media: min(100%, 50em);
 
+  --min-width-calc: min(100% - 2rem, 55em);
   --min-width-input-calc: min(40rem, 100%);
 
   --padding-block-nav: min(8rem, 15vh);
@@ -458,6 +459,9 @@ p > a:link {
 }
 
 // Wine Calculator 
+.calc-wine {
+  width: var(--min-width-calc);
+}
 .input-container {
   width: var(--min-width-input-calc);
   margin-inline: auto;
@@ -504,11 +508,7 @@ p > a:link {
 .output-field > * {
   font-size: var(--step--1);
 }
-.output-field > label::after {
-  content: " *";
-  font-size: 1rem;
-  top: 0;
-}
+
 .disclaimer {
   font-size: 15px;
 }

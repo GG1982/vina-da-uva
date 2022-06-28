@@ -36,6 +36,8 @@ body {
   --min-width-pages: min(100% - 1rem, 65em, 90vw);
   --min-width-media: min(100%, 50em);
 
+  --min-width-input-calc: min(30rem, 100% - 1rem);
+
   --padding-block-nav: min(8rem, 15vh);
 
 
@@ -455,9 +457,63 @@ p > a:link {
   height: var(--img-height);
 }
 
+// Wine Calculator 
+.input-container {
+  width: var(--min-width-input-calc);
+  margin-inline: auto;
+  margin-bottom: 3rem;
+}
+
+.input-field {
+  margin-bottom: 2rem;
+  border-radius: 4px;
+  border: 3px solid #171c20;
+  box-shadow: .5rem .5rem 0 #171c20;
+  background-color: $clr--hero;
+  padding: 1rem;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+.input-field > input {
+  text-align: center;
+  padding-block: 0.5rem;
+}
 
 
-// Products
+.output-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(Min(200px, 100%), 1fr));
+  
+  color: #fff;
+}
+.output-field {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0.5rem;
+
+  border-radius: 4px;
+  border: 3px solid #171c20;
+  box-shadow: .5rem .5rem 0 #171c20;
+  background-color: $clr--accent;
+  padding: 1rem 0;
+}
+
+.output-field > * {
+  font-size: var(--step--1);
+}
+.output-field > label::after {
+  content: " *";
+  font-size: 1rem;
+  top: 0;
+}
+.disclaimer {
+  font-size: 15px;
+}
+
+// Products for grape.html
 .product__img-1 {
   background-image: url(../../assets/images/montepulciano1.jpg);
 }
@@ -482,7 +538,6 @@ p > a:link {
 
 
 // Secondary Pages
-
 .page__intro {
   display: flex;
   flex-direction: column;

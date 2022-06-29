@@ -1,3 +1,10 @@
-url: "" # the base hostname & protocol for your site, e.g. http://example.com
+url: "https://uvaditalia.co.uk" # the base hostname & protocol for your site, e.g. http://example.com
 baseurl: "" # the subpath of your site, e.g. /blog
 title: "Uva d'Italia" # the name of your site, e.g. ACME Corp.
+
+description: Italian wine grapes for UK production.
+
+plugins:
+  - jekyll-feed
+  - jekyll-sitemap
+  - jekyll-seo-tag

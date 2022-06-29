@@ -2,7 +2,7 @@ url: "https://uvaditalia.co.uk" # the base hostname & protocol for your site, e.
 baseurl: "" # the subpath of your site, e.g. /blog
 title: "Uva d'Italia" # the name of your site, e.g. ACME Corp.
 
-description: Italian wine grapes for UK production.
+description: Produce homemade wine with high-quality grapes straight from Italy.
 
 plugins:
   - jekyll-feed

@@ -1,56 +1,17 @@
-<!DOCTYPE html>
-<html lang="en-UK">
-
-<head>
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta charset="utf-8">
-  <title>Italian Wine Grapes - Uva d'Italia</title>
-  <meta name="keywords" content="wine grapes, homemade wine, montepulciano grape, buy wine grapes uk, italian wine grapes, make wine uk">
-  <link rel="stylesheet" href="assets/css/main.css">
-  <link rel="icon" type="image/svg+xml" href="assets/images/Uva-favicon.svg" />
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;700&display=swap" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css2?family=Merriweather&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css">
-</head>
-
-<body>
-  <header class="header">
-    <section class="nav__container">
-        <div class="logo">
-            <a href="https://gg1982.github.io/vina-da-uva/" class="nav__logo">
-                <img src="assets/images/logo_transparent_background.png" alt="">
-            </a>
-        </div>
-
-        <button class="mobile-nav-toggle" 
-        aria-controls="nav__list" aria-expanded="false">
-            <span class="sr-only">Menu</span>
-            <span class="hamburger"></span>
-        </button>
+---
+layout: default
+title: Italian Wine Grapes
+slogan: Italian Grape Specialist
+permalink: /home
+---
 
 
-        <nav class="nav" aria-label="primary">        
-            <ul class="nav__list font--1 capitalize" id="nav__list" data-visible="false">
-                <li class="nav__item"><a href="https://gg1982.github.io/vina-da-uva/" class="nav__link">Home</a></li>
-                <li class="nav__item"><a href="https://gg1982.github.io/vina-da-uva/#about-us" class="nav__link">About</a></li>
-                <li class="nav__item"><a href="https://gg1982.github.io/vina-da-uva/grapes" class="nav__link">grapes</a></li>
-                <li class="nav__item"><a href="https://gg1982.github.io/vina-da-uva/tools.html" class="nav__link">tools</a></li>
-                <li class="nav__item"><a href="https://gg1982.github.io/vina-da-uva/faq" class="nav__link">FAQs</a></li>
-                <li class="nav__item"><a href="https://gg1982.github.io/vina-da-uva/#contact" class="nav__link">contact</a></li>
-            </ul>
-        </nav>
-    </section>
-</header>
-
-    <section class="hero"> 
+<section class="hero"> 
 
     <div class="hero--top">
         <div class="hero__intro width-m mx-auto">
             <div class="hero--title capitalize">
-                <h1 class="title-font font-4 padding-b-2">Italian Wine Grapes</h1>
+                <h1 class="title-font font-4 padding-b-2">{{ page.title }}</h1>
                 <a class="hero__btn capitalize" href="https://gg1982.github.io/vina-da-uva/grapes">Selection of grapes</a>
             </div>
 
@@ -162,7 +123,7 @@
                 deliver grapes that ensure your wine is of the highest-quality.
                 <br><br>
                 Please note that the wine grapes are
-                seasonal until August 2022. Deliveries will run from August to October. Pre-orders are available.
+                seasonal until August {{ site.time | date: '%Y' }}. Deliveries will run from August to October. Pre-orders are available.
                 <br><br>
                 All prices are for one case that produces 4.5L of wine. One case contains of 8-9kg of fresh wine grape.
                 (Minimum order quantity is 10 cases.)
@@ -253,69 +214,4 @@
 </section>
 
 <script src="assets/js/calc.js"></script>
-
-
-  
-<footer class="site-footer">
-    <div class="footer-container mx-auto width-s">
-        <!-- <div class="footer-logo">
-            <img class="img-logo" src="assets/images/logo_transparent_background.png" alt="">
-        </div> -->
-        <div class="footer-links">
-            <ul class="page-links flex-row gap-8">
-                <div class="flex-col gap-var">
-                    <li><a class="footer-link" href="https://gg1982.github.io/vina-da-uva/">Home</a></li>
-                    <li><a class="footer-link" href="https://gg1982.github.io/vina-da-uva/#about-us">About</a></li>
-                    <li><a class="footer-link" href="https://gg1982.github.io/vina-da-uva/#contact">Contact</a></li>
-                </div>
-                <div class="flex-col gap-var">
-                    <li><a class="footer-link" href="https://gg1982.github.io/vina-da-uva/grapes">Grapes</a></li>
-                    <li><a class="footer-link" href="https://gg1982.github.io/vina-da-uva/tools">Tools</a></li>
-                    <li><a class="footer-link" href="https://gg1982.github.io/vina-da-uva/faq">FAQs</a></li>
-                </div>
-            </ul>
-        </div>
-        <div class="footer-social">
-            <ul class="social-links flex-row flex-wrap gap-2">
-                <li>
-                    <a href="http://">
-                        <i class="social-link bi bi-facebook"></i>
-                    </a>
-                </li>
-                <li>
-                    <a href="http://">
-                        <i class="social-link bi bi-twitter"></i>
-                    </a>
-                </li>
-                <li>
-                    <a href="http://">
-                        <i class="social-link bi bi-instagram"></i>
-                    </a>
-                </li>
-            </ul>
-        </div>
-        <div class="footer-copyright">
-            <p class="capitalize">
-                Copyright - © Vino Da Uva LTD 2022. All rights reserved.
-            </p>
-            <p class="capitalize">
-                Registered Office Contact No: 020 8087 3088.
-            </p>
-        </div>
-        <div class="footer-vat">
-            <p class="capitalize">
-                Company Registration Number: 12858372.</p>
-            <p class="capitalize">VAT Number: GB366328185.</p>
-        </div>
-    </div>
-</footer>
-
-
-  <script src="assets/js/index.js"></script>
-  <script defer src="https://unpkg.com/smoothscroll-polyfill@0.4.4/dist/smoothscroll.min.js"></script>
-</body>
-
-</html>
-
-
 

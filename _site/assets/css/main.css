@@ -163,6 +163,8 @@ p > a:link { text-decoration: underline; }
 
 .thanks__img { background-image: url(../../assets/images/vineyard1.jpg); height: var(--img-height); }
 
+.about__img { background-image: url(../../assets/images/vineyard3.jpg); height: var(--img-height); }
+
 @media screen and (max-width: 550px) { .page__intro { flex-direction: column-reverse; } .page__title { flex-direction: column; text-align: center; } .page__title > img { display: inline-block; text-align: center; } }
 
 .form-section { position: relative; width: 100%; margin: 0; padding-top: var(--padding-block); padding-bottom: var(--padding-block); filter: brightness(0.95); }
@@ -356,6 +358,8 @@ p { font-size: var(--step--2); }
 .my-auto { margin-block: auto; }
 
 .block { display: block; }
+
+.inline-block { display: inline-block; }
 
 .grid-auto-fit { display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); }
 

@@ -595,6 +595,11 @@ p > a:link {
   height: var(--img-height);
 }
 
+.about__img {
+  background-image: url(../../assets/images/vineyard3.jpg);
+  height: var(--img-height);
+}
+
 
 @media screen and (max-width: 550px) {
 

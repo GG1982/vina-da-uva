@@ -163,55 +163,7 @@ permalink: /
 </main>
 
 
-<section class="form-section flex-center">
-    <div class="form-container width-m mx-auto">
-
-        <div class="back form-img"></div>
-
-        <form id="contact" action="https://formsubmit.co/e0752bbc7e692b41b24440f222355e73" method="POST" class="form">
-            <h5 class="padding-b-1 font-3">Get in Touch</h5>
-
-            <!-- Take user to thank you page on submission -->
-            <input type="hidden" name="_next" value="https://gg1982.github.io/vina-da-uva/thankyou.html">
-
-            <!-- Subject line -->
-            <input type="hidden" name="_subject" value="New submission!">
-
-            <!-- CC another email -->
-            <input type="hidden" name="_cc" value="another@email.com">
-
-            <!-- Avoid spam by fooling scrapers -->
-            <input type="text" name="_honey" class="is-hidden">
-
-            <!-- Autoresponse to users with copy of submission -->
-            <input type="hidden" name="_autoresponse"
-                value="Your submission has been received, and a member of our team will be in touch within 48 hours. Thank you, Vina da Uva.">
-
-            <div class="form-item form-name">
-                <input name="Name" type="text" class="form-input" placeholder="First Name" aria-label="Your First Name"
-                    required>
-            </div>
-
-            <div class="form-item form-email">
-                <input name="Email" type="email" class="form-input" placeholder="Email address"
-                    aria-label="Your Email Address" required>
-            </div>
-
-            <div class="form-item form-phone">
-                <input name="Phone" type="phone" class="form-input" placeholder="Phone Number"
-                    aria-label="Your Phone Number" required>
-            </div>
-
-            <textarea name="Message" name="textarea" class="form-input form-message" rows="5" placeholder="How Can We Help You?" aria-label="Your Message" required></textarea>
-
-            <button class="form-button" type="submit">
-                Send Message
-            </button>
-
-        </form>
-
-    </div>
-</section>
+{% include form.html %}
 
 <script src="../assets/js/calc.js"></script>
 

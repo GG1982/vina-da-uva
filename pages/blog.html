@@ -1,0 +1,33 @@
+---
+layout: post
+title: blog
+permalink: /blog/
+custom_css: blog
+---
+
+<ul class="my-posts">
+    {% for post in site.posts limit: 1 %}
+    <li>
+        <a href="{{ post.url }}" class="my-posts__title">{{ post.title }}</a>
+        <span class="post__description">
+            {{ post.excerpt | strip_html | strip_newlines | truncatewords: 15 }}
+        </span>
+        <a href="{{ post.url }}" class="my-posts__link">Read More</a>
+    </li>
+    {% endfor %}
+</ul>
+
+<section class="older-posts">
+    <h2>Older posts</h2>
+    <ul class="my-posts older-posts__section">
+        {% for post in site.posts limit: 3 offset: 1 %}
+        <li class="older-posts__body">
+            <a href="{{ post.url }}" class="my-posts__title">{{ post.title }}</a>
+            <span class="post__description">
+                {{ post.excerpt | strip_html | strip_newlines | truncatewords: 15 }}
+            </span>
+            <a href="{{ post.url }}" class="my-posts__link">Read More</a>
+        </li>
+        {% endfor %}
+    </ul>
+</section>

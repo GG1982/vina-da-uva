@@ -310,7 +310,7 @@ p > a:link {
   display: grid;
 
   grid-template-areas: 
-  "title body";
+  "title title body";
 
   column-gap: 3rem;
   row-gap: 2rem;
@@ -357,10 +357,21 @@ p > a:link {
 
 
 .hero__btn {
-  background-color: #000000;
-  color: #fff;
+  background-color: $bodyColor;
+  color: $backgroundColor;
   padding: 1rem 2rem;
-  width: max-content;
+  width: Min(250px, 95%);
+  text-decoration: none;
+  border-radius: var(--border-radius);
+  text-align: center;
+  font-size: var(--step--1);
+}
+
+.hero__btn--inverse {
+  background-color: $clr--wine;
+  color: $backgroundColor;
+  padding: 1rem 2rem;
+  width: Min(250px, 95%);
   text-decoration: none;
   border-radius: var(--border-radius);
   text-align: center;
@@ -368,7 +379,7 @@ p > a:link {
 }
 
 
-@media screen and (max-width: 700px) {
+@media screen and (max-width: 900px) {
   .hero {
     padding-bottom: 0;
   }
@@ -383,6 +394,11 @@ p > a:link {
   }
   .hero--bottom {
     margin-top: 0;
+  }
+  .hero--title {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
   }
   .hero__body {
     align-self: start;
@@ -733,10 +749,10 @@ textarea {
 .footer-logo {
   grid-area: logo;
 }
-.footer-logo > img {
-  width: 150px;
-  height: auto;
-}
+// .footer-logo > img {
+//   width: 150px;
+//   height: auto;
+// }
 
 .footer-links {
   grid-area: pages;

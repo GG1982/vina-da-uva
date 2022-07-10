@@ -1,4 +1,4 @@
-url: "https://uvaditalia.co.uk" # the base hostname & protocol for your site, e.g. http://example.com
+url: "https://www.uvaditalia.co.uk" # the base hostname & protocol for your site, e.g. http://example.com
 baseurl: "" # the subpath of your site, e.g. /blog
 title: "Uva d'Italia" # the name of your site, e.g. ACME Corp.
 tagline: "Wine grapes imported from Italy for UK distribution"

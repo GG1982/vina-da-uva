@@ -219,7 +219,7 @@ textarea { resize: none; }
 
 .footer-copyright > *, .footer-vat > * { font-size: 12px; }
 
-.bi-facebook, .bi-twitter, .bi-instagram { font-size: var(--step-1); }
+.bi-facebook, .bi-instagram { font-size: var(--step-1); }
 
 @media screen and (max-width: 550px) { .footer-container { display: flex; flex-direction: column; } .mobile-only { display: block; } .media-element > img { height: 300px; } }
 

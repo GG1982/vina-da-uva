@@ -740,22 +740,13 @@ textarea {
   row-gap: 1.5rem;
   column-gap: 10px;
   grid-template-areas: 
-    "logo logo . . ."
-    "pages pages . social social"
+    "nav nav . social social"
     "copyright copyright copyright copy-vat copy-vat";
 }
 
 
-.footer-logo {
-  grid-area: logo;
-}
-// .footer-logo > img {
-//   width: 150px;
-//   height: auto;
-// }
-
 .footer-links {
-  grid-area: pages;
+  grid-area: nav;
 }
 
 .footer-link {

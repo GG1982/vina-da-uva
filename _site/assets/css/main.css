@@ -197,11 +197,9 @@ textarea { resize: none; }
 
 .site-footer { background-color: #020917; color: #ffffff; margin-top: auto; }
 
-.footer-container { padding-top: 2rem; padding-bottom: 2rem; display: grid; row-gap: 1.5rem; column-gap: 10px; grid-template-areas: "logo logo . . ." "pages pages . social social" "copyright copyright copyright copy-vat copy-vat"; }
+.footer-container { padding-top: 2rem; padding-bottom: 2rem; display: grid; row-gap: 1.5rem; column-gap: 10px; grid-template-areas: "nav nav . social social" "copyright copyright copyright copy-vat copy-vat"; }
 
-.footer-logo { grid-area: logo; }
-
-.footer-links { grid-area: pages; }
+.footer-links { grid-area: nav; }
 
 .footer-link { color: #ffffff; }
 
@@ -282,6 +280,12 @@ p { font-size: var(--step--2); }
 .font-weight-800 { font-weight: 800; }
 
 .font-weight-900 { font-weight: 900; }
+
+.width-min { width: min-content; }
+
+.width-max { width: max-content; }
+
+.width-fit { width: fit-content; }
 
 .width-s { width: var(--min-width-s); }
 

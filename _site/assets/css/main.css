@@ -365,7 +365,7 @@ p { font-size: var(--step--2); }
 
 .inline-block { display: inline-block; }
 
-.grid-auto-fit { display: grid; grid-template-columns: repeat(auto-fit, minmax(Min(300px, 100%), 1fr)); }
+.grid-auto-fit { display: grid; grid-template-columns: repeat(auto-fit, minmax(Min(350px, 100%), 1fr)); }
 
 .grid-items-center { place-items: center; }
 

@@ -39,6 +39,14 @@
     font-size: var(--step--2);
 }
 
+.blog__body a {
+    text-decoration: underline;
+}
+
+.blog__body .blog-btn {
+    font-size: var(--step-1);
+}
+
 
 .blog__body p:first-of-type:first-letter {
     float: left;
@@ -58,10 +66,10 @@ p:first-of-type::first-line {
     color: red;
 }
 
-.blog__body ul {
+.blog__body ul,
+.blog__body ol {
     margin-left: 2rem;
 }
-
 
 .blog__body img:first-of-type {
     max-height: 40rem;

@@ -24,9 +24,14 @@
 </head>
 
 <body>
-
     {% include header.html %}
+
+    <article>
+        <section class="blog__body">
         {{ content }}
+        </section>
+    </article>
+    
     {% include footer.html %}
 
     <script src="../assets/js/index.js"></script>

@@ -51,7 +51,7 @@
                 
             {% endif %}
 
-            <!-- Get the next article from category -->
+            <!-- Get the next & prev article from category -->
             {% assign cat = page.categories[0] %}
             {% assign cat_list = site.categories[cat] %}
             {% for post in site.categories.grape %}

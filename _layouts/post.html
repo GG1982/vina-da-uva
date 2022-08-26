@@ -40,7 +40,44 @@
 
     <article>
         <section class="blog__body">
-        {{ content }}
+            <h1>{{ page.title }}</h1>
+            <img src="{{ page.image }}" alt="a picture of {{ page.title }}">
+            {% if site.categories.grape %}
+
+                <h2>History and Origin</h2>
+                {{ content }}
+                <a href="{{ site.url }}/#contact" class="blog-btn capitalize">Like This grape? Make an order</a>
+
+                
+            {% endif %}
+
+            <!-- Get the next article from category -->
+            {% assign cat = page.categories[0] %}
+            {% assign cat_list = site.categories[cat] %}
+            {% for post in site.categories.grape %}
+                {% if post.url == page.url %}
+                    {% assign pOffset = forloop.index0 | minus: 1 %}
+                    {% assign nOffset = pOffset | plus: 2 %}
+                    {% if forloop.first == false %}
+                        {% assign next_post = cat_list[pOffset] %}
+                    {% endif %}
+                    {% if forloop.last == false %}
+                        {% assign prev_post = cat_list[nOffset] %}
+                    {% endif %}
+                    {% break %}
+                {% endif %}
+            {% endfor %}
+
+
+            <div class="flex-row flex-wrap flex-between gap-1 row-gap-1">
+                {% if prev_post %}
+                    <a href="{{ prev_post.url }}">&laquo; {{ prev_post.title }}</a>
+                {% endif %}
+                {% if next_post %}
+                    <a href="{{ next_post.url }}">{{ next_post.title }} &raquo;</a>
+                {% endif %}
+            </div>
+                
         </section>
     </article>
     

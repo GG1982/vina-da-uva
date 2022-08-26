@@ -401,6 +401,12 @@ p { font-size: var(--step--2); }
 
 .flex-justify-end { justify-content: flex-end; }
 
+.flex-between { justify-content: space-between; }
+
+.flex-around { justify-content: space-around; }
+
+.flex-even { justify-content: space-evenly; }
+
 .gap-var { gap: var(--border-radius); }
 
 .gap-1 { gap: 1rem; }

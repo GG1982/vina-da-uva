@@ -88,3 +88,18 @@ right hands, the Trebbiano grapes result in some of the finest white wines avail
         </div>
     </div>
 </main>
+
+{% for post in site.categories.grape %}
+
+<li>
+    <a href="{{ post.url }}">{{ post.title }}</a>
+    <p>{{ post.excerpt | strip_html | strip_newlines | truncatewords: 35}}</p>
+    <!-- <img src="{{ post.image}} " alt=""> -->
+</li>
+
+{% endfor %}
+
+
+
+
+

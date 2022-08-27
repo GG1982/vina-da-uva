@@ -54,7 +54,7 @@
             <!-- Get the next & prev article from category -->
             {% assign cat = page.categories[0] %}
             {% assign cat_list = site.categories[cat] %}
-            {% for post in site.categories.grape %}
+            {% for post in cat_list %}
                 {% if post.url == page.url %}
                     {% assign pOffset = forloop.index0 | minus: 1 %}
                     {% assign nOffset = pOffset | plus: 2 %}

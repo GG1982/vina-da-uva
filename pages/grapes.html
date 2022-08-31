@@ -34,7 +34,7 @@ tagline: Wine grapes from Italy for sale UK
             <a href="{{ post.url }}"><img class="product__img" src="{{ post.image}} " alt="a picture of {{ post.title }}"></a>
             
             <p>
-                {{ post.excerpt | strip_html | strip_newlines | truncatewords: 12 }}
+                {{ post.excerpt | strip_html | strip_newlines | truncatewords: 20 }}
             </p>
             <a class="block capitalize" href="{{ post.url }}">{{ post.title }}: Read more</a>
         </div>

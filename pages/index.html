@@ -37,66 +37,16 @@ permalink: /
 <section class="media-conatiner">
     <div class="media-scroller snaps-inline">
     
-        <div class="media-element">
-            <img src="../assets/images/montepulciano1.jpg" alt="" loading="lazy">
-            <h3 class="capitalize font-1">Montepulciano Wine grape</h3>
+        {% for post in site.categories.grape reversed %}
+        <div class="media-element row-gap-1">
+            <img src="{{ post.image }}" alt="a picture of {{ post.title }}" loading="lazy">
+            <h3 class="capitalize font-1">{{ post.title }}</h3>
             <p>
-                Montepulciano wines are famous for their soft flavours and deep colour pigments. Delicate tannins and a low acidity
-                create a wine typically best consumed soon after bottling.
-                <a class="capitalize" href="{{ site.url }}/montepulciano-grape/">Read more</a>
+                {{ post.excerpt | strip_html | strip_newlines | truncatewords: 30 }}
             </p>
+            <a class="capitalize" href="{{ post.url }}">{{ post.title }}: Read more</a>
         </div>
-    
-        <div class="media-element">
-            <img src="../assets/images/sangiovese1.jpg" alt="" loading="lazy">
-            <h3 class="capitalize font-1">Sangiovese Wine grape</h3>
-            <p>
-                Sangiovese wine is known for its high acidity, medium-plus tannins and savoury characters. Sniff a glass next time
-                you'll find that aromas move toward dried cherries, figs and roses.
-                <a class="capitalize" href="{{ site.url }}/sangiovese-grape/">Read more</a>
-            </p>
-        </div>
-    
-        <div class="media-element">
-            <img src="../assets/images/syrah1.jpg" alt="" loading="lazy">
-            <h3 class="capitalize font-1">shiraz Wine grape</h3>
-            <p>
-                Syrah or shiraz can produce delicously dark wine. Its high tannins means shiraz wines are capable of aging and improving
-                over the decades. Expect rich, deep flavour of dark fruits and hint of coffee and spice.
-                <a class="capitalize" href="{{ site.url }}/shiraz-grape/">Read more</a>
-            </p>      
-        </div>
-
-        <div class="media-element">
-            <img src="../assets/images/merlot1.jpg" alt="" loading="lazy">
-            <h3 class="capitalize font-1">merlot Wine grape</h3>
-            <p>
-                Merlot's soft texture helps to give it a deliciously plummy, almost fruitcake-like flavour. It can be a little grassy
-                and develops blackcurrant, blackberry, blueberry, chocolate and spice-like characters when fully ripe.
-                <a class="capitalize" href="{{ site.url }}/merlot-grape/">Read more</a>
-            </p>
-        </div>
-
-        <div class="media-element">
-            <img src="../assets/images/trebbiano1.jpg" alt="" loading="lazy">
-            <h3 class="capitalize font-1">trebbiano Wine grape</h3>
-            <p>
-                Trebbiano d'Abruzzo is a white wine full of colour, sweet scents, duration of flavour and capability to age. In
-                the right hands, the trebbiano grapes results in some of the finest white wines avaliavlible.
-                <a class="capitalize" href="{{ site.url }}/trebbiano-grape/">Read more</a>
-            </p>
-        </div>
-
-        <div class="media-element">
-            <img src="../assets/images/moscato1.jpg" alt="" loading="lazy">
-            <h3 class="capitalize font-1">moscato Wine grape</h3>
-            <p>
-                The wine made from Moscato has an irresistible sweetness and refreshing fruit flavors! Most Moscato wines have high
-                residual sugar levels, an opulent floral aroma with hints of honeysuckle, and flavor notes of white peach, apricot, and
-                tropical fruit.
-                <a class="capitalize" href="{{ site.url }}/moscato-grape/">Read more</a>
-            </p>
-        </div>
+        {% endfor %}
 
     </div>
 </section>

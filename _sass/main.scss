@@ -433,7 +433,7 @@ p > a:link {
 .media-element {
   display: grid;
   grid-template-rows: min-content;
-  gap: var(--border-radius);
+  gap: 0.75rem;
   align-items: center;
   padding: 2rem;
 

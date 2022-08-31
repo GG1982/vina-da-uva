@@ -3,12 +3,7 @@ layout: default
 title: Grapes - Italian Wine Grapes
 slogan: six delicious wine grapes
 permalink: /grapes/
-tagline: Wine grapes imported from Italy for UK distribution
-
-description: Uva d'Italia specialises in the import of Italian grapes. Winemaking has been the family business for over three generations. We aim to share our passion for wine by supplying the U.K. with the highest selection of wine grapes from Italy. Enjoy producing homemade wine from the finest grapes Italy has to offer. All our grapes have been handpicked and brought over from the heart of Italy. We take great care to deliver grapes that ensure your wine is of the highest quality. Please note that the wine grapes are seasonal until August 2022. Deliveries will run from August to October. Pre-orders are available.
-
-
-image: ../assets/images/logo_white_background.jpg
+tagline: Wine grapes from Italy for sale UK
 ---
 
 
@@ -21,7 +16,7 @@ image: ../assets/images/logo_white_background.jpg
                 <h1>Italian<span class="block">wine grape</span></h1>
                 <img class="page__img" src="../assets/images/italy.svg" alt="">
             </div>
-            <h2>{{ page.slogan }}</h2>
+            <h2>{{ page.tagline }}</h2>
             <p>
                 We've carefully handpicked a selection of six delicious wine grapes sourced from Italy for your enjoyment. 
             </p>
@@ -33,77 +28,21 @@ image: ../assets/images/logo_white_background.jpg
 
 <main class="padding-b-3">
     <div class="grid-auto-fit width-l mx-auto row-gap-5 col-gap-2 padding-t-5">
-        <div class="flex-col gap-1">
-            <img class="product__img mx-auto" src="../assets/images/montepulciano1.jpg" alt="">
-            <h4 class="capitalize text-center font-1">
-                montepulciano<span class="block">wine grape</span>
-            </h4>
-            <p class="per-width-90 mx-auto">
-Montepulciano wines are famous for their soft flavours and deep colour pigments. Delicate tannins and a low acidity create a wine typically best consumed soon after bottling.
+        
+        {% for post in site.categories.grape reversed %}
+        <div class="grapes flex-col flex-between gap-1">
+            <a href="{{ post.url }}"><img class="product__img" src="{{ post.image}} " alt="a picture of {{ post.title }}"></a>
+            
+            <p>
+                {{ post.excerpt | strip_html | strip_newlines | truncatewords: 12 }}
             </p>
+            <a class="block capitalize" href="{{ post.url }}">{{ post.title }}: Read more</a>
         </div>
-        <div class="flex-col gap-1">
-            <img class="product__img mx-auto" src="../assets/images/sangiovese1.jpg" alt="">
-            <h4 class="capitalize text-center font-1">
-                Sangiovese<span class="block">wine grape</span>
-            </h4>
-            <p class="per-width-90 mx-auto">
-Sangiovese wine is known for its high acidity, medium-plus tannins and savoury characters. Sniff a glass next time you'll find that aromas move toward dried cherries, figs and roses.
-            </p>
-        </div>
-        <div class="flex-col gap-1">
-            <img class="product__img mx-auto" src="../assets/images/syrah1.jpg" alt="">
-            <h4 class="capitalize text-center font-1">
-                Shiraz<span class="block">wine grape</span>
-            </h4>
-            <p class="per-width-90 mx-auto">
-Syrah or shiraz can produce deliciously dark wine. Its high tannins mean Shiraz wines are capable of ageing and
-improving over the decades. Expect a rich, deep flavour of dark fruits and a hint of coffee and spice.
-            </p>
-        </div>
-
-        <div class="flex-col gap-1">
-            <img class="product__img mx-auto" src="../assets/images/merlot1.jpg" alt="">
-            <h4 class="capitalize text-center font-1">
-                merlot<span class="block">wine grape</span>
-            </h4>
-            <p class="per-width-90 mx-auto">
-                Merlot's soft texture helps to give it a deliciously plummy, almost fruitcake-like flavour. It can be a little grassy
-                and develops blackcurrant, blackberry, blueberry, chocolate and spice-like characters when fully ripe.
-            </p>
-        </div>
-
-        <div class="flex-col gap-1">
-            <img class="product__img mx-auto" src="../assets/images/trebbiano1.jpg" alt="">
-            <h4 class="capitalize text-center font-1">
-                Trebbiano d'Abbruzzo<span class="block">wine grape</span>
-            </h4>
-            <p class="per-width-90 mx-auto">
-Trebbiano d'Abruzzo is a white wine full of colour, sweet scents, duration of flavour and capability to age. In the
-right hands, the Trebbiano grapes result in some of the finest white wines available.
-            </p>
-        </div>
-
-        <div class="flex-col gap-1">
-            <img class="product__img mx-auto" src="../assets/images/moscato1.jpg" alt="">
-            <h4 class="capitalize text-center font-1">
-                Moscato<span class="block">wine grape</span>
-            </h4>
-            <p class="per-width-90 mx-auto">
-                The wine made from Moscato has an irresistible sweetness and refreshing fruit flavors! Most Moscato wines have high                residual sugar levels, an opulent floral aroma with hints of honeysuckle, and flavor notes of white peach, apricot, and                tropical fruit.            </p>
-        </div>
+        {% endfor %} 
     </div>
 </main>
 
-<!-- {% for post in site.categories.grape %}
 
-<li>
-    <a href="{{ post.url }}">{{ post.title }}</a>
-    <p>{{ post.excerpt | strip_html | strip_newlines | truncatewords: 35}}</p>
-    <img src="{{ post.image}} " alt=""> 
-</li>
-
-{% endfor %} -->
 
 
 

@@ -135,14 +135,6 @@ p > a:link { text-decoration: underline; }
 
 .disclaimer { font-size: 15px; }
 
-.product__img-1 { background-image: url(../../assets/images/montepulciano1.jpg); }
-
-.product__img-2 { background-image: url(../../assets/images/sangiovese1.jpg); }
-
-.product__img-3 { background-image: url(../../assets/images/syrah1.jpg); }
-
-.product__img-4 { background-image: url(../../assets/images/trebbiano1.jpg); }
-
 .product__img { height: 200px; width: 400px; object-fit: cover; }
 
 .page__intro { display: flex; flex-direction: column; }
@@ -328,6 +320,8 @@ p { font-size: var(--step--2); }
 .max-width-65 { max-width: 65rem; }
 
 .max-width-70 { max-width: 70rem; }
+
+.per-width-100 { width: 100%; }
 
 .per-width-90 { width: 90%; }
 

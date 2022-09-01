@@ -338,7 +338,6 @@ p {
 .flex-around {
     justify-content: space-around;
 }
-
 .flex-even {
     justify-content: space-evenly;
 }
@@ -483,7 +482,13 @@ p {
 .capitalize {
     text-transform: capitalize;
 }
+.uppercase {
+    text-transform: uppercase;
+}
 
+.lowercase {
+    text-transform: lowercase;
+}
 // Background 
 .back {
     background-size: cover;

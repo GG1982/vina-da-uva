@@ -485,6 +485,10 @@ p { font-size: var(--step--2); }
 
 .capitalize { text-transform: capitalize; }
 
+.uppercase { text-transform: uppercase; }
+
+.lowercase { text-transform: lowercase; }
+
 .back { background-size: cover; background-position: center; background-repeat: no-repeat; }
 
 .is-hidden { display: none; }

@@ -657,6 +657,16 @@ p > a:link {
   grid-template-columns: repeat(auto-fit, minmax(Min(300px, 100%), 1fr));
 }
 
+// .form-address {
+//   display: flex;
+//   flex-direction: column;
+//   justify-content: center;
+//   align-items: center;
+//   color: #ffffff;
+//   // background-color: red;
+//   height: 100%;
+// }
+
 .form-img {
   background-image: url(../../assets/images/vineyard4.jpg);
   min-height: 200px;

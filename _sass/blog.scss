@@ -82,6 +82,12 @@ p:first-of-type::first-line {
     grid-column: 3 / 11;
 }
 
+@media (max-width: 40em) {
+    .blog__body img:not(:first-of-type) {
+        grid-column: 1 / -1;
+    }
+}
+
 .blog__body q {
     width: 80%;
     text-align: center;

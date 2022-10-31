@@ -115,7 +115,7 @@ p > a:link { text-decoration: underline; }
 
 .snaps-inline > * { scroll-snap-align: start; }
 
-@media screen and (max-width: 700px) { .media-element { padding: 1rem; gap: 1rem; } .media-conatiner { padding-top: 2rem; padding-bottom: 2rem; padding-left: var(--border-radius); } }
+@media screen and (max-width: 700px) { .media-element { padding: 1rem; } .media-conatiner { padding-top: 2rem; padding-bottom: 2rem; padding-left: var(--border-radius); } }
 
 .wine-about__img { background-image: url(../../assets/images/winegrape2.jpg); height: var(--img-height); }
 

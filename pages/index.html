@@ -42,7 +42,7 @@ permalink: /
             <img src="{{ post.image }}" alt="a picture of {{ post.title }}" loading="lazy">
             <h3 class="capitalize font-1">{{ post.title }}</h3>
             <p>
-                {{ post.excerpt | strip_html | strip_newlines | truncatewords: 30 }}
+                {{ post.excerpt | strip_html | strip_newlines | truncatewords: 20 }}
             </p>
             <a class="capitalize" href="{{ post.url }}">{{ post.title }}: Read more</a>
         </div>

@@ -135,7 +135,9 @@ p > a:link { text-decoration: underline; }
 
 .disclaimer { font-size: 15px; }
 
-.product__img { height: 200px; width: 400px; object-fit: cover; }
+.grapes { max-width: 600px; margin-inline: auto; }
+
+.product__img { height: 200px; width: 100%; object-fit: cover; }
 
 .page__intro { display: flex; flex-direction: column; }
 

@@ -1,36 +1,68 @@
 ---
-layout: post
+layout: default
 title: blog - Buy Italian Wine Grapes
 permalink: /blog/
 custom_css: blog
 ---
 
-<main class="blog-posts flex-col width-s mx-auto gap-4 padding-t-4">
-    <ul class="my-posts">
-        {% for post in site.posts limit: 1 %}
-        <li>
-            <a href="{{ post.url }}" class="my-posts__title">{{ post.title }}</a>
-            <span class="post__description">
-                {{ post.excerpt | strip_html | strip_newlines | truncatewords: 15 }}
-            </span>
-            <a href="{{ post.url }}" class="my-posts__link">Read More</a>
-        </li>
-        {% endfor %}
-    </ul>
-    
-    <section class="older-posts">
-        <h2 class="capitalize">Older posts</h2>
-        <ul class="my-posts older-posts__section flex-row gap-1">
-            {% for post in site.posts limit: 3 offset: 1 %}
-            <li class="older-posts__body">
-                <a href="{{ post.url }}" class="my-posts__title">{{ post.title }}</a>
-                <span class="post__description">
-                    {{ post.excerpt | strip_html | strip_newlines | truncatewords: 15 }}
-                </span>
-                <a href="{{ post.url }}" class="my-posts__link">Read More</a>
-                <img src="{{ post.img }}" alt="">
+<main class="blog-posts flex-col width-m mx-auto gap-4 padding-t-4">
+    <section>
+        <h1 class="capitalize">Latest article</h1>
+        <ul class="my-posts">
+            {% for post in site.posts limit: 1 %}
+            <li class="flex-col gap-1">
+                <a href="{{ post.url }}">
+                    <img class="my-posts__img" src="{{ post.image }}" alt="">
+                </a>
+                <a href="{{ post.url }}" class="my-posts__title width-fit"><h3 class="font-2">{{ post.title }}</h3></a>
+                <p class="post__description">
+                    {{ post.excerpt | strip_html | strip_newlines | truncatewords: 24 }}
+                </p>
             </li>
             {% endfor %}
         </ul>
     </section>
+    
+    <!-- <section class="older-posts padding-b-5">
+        <h2 class="capitalize">Older Articles</h2>
+        <ul class="my-posts older-posts__section grid-auto-fit gap-3 row-gap-3">
+            {% for post in site.posts limit: 4 offset: 1 %}
+            <li class="older-posts__body flex-col gap-1 mx-auto max-width-30">
+                <a href="{{ post.url }}" class="my-posts__title width-fit"><h3 class="font-0">{{ post.title }}</h3></a>
+                <p class="post__description">
+                    {{ post.excerpt | strip_html | strip_newlines | truncatewords: 15 }}
+                </p>
+                <a href="{{ post.url }}"><img class="my-posts__img" src="{{ post.image }}" alt=""></a>
+            </li>
+            {% endfor %}
+        </ul>
+    </section> -->
+
+
+
+
+    <section class="">
+        <h2 class="capitalize">Older Articles</h2>
+
+        <section class="cards-container mx-auto padding-block-3">
+            <ul role="list" class="grid-auto-fit grid-items-center mx-auto width-m row-gap-4 col-gap-2">
+                {% for post in site.posts limit: 5 offset: 1 %}
+                <li class="">
+                    <a class="card" href="{{ post.url }}" style="--bg-img: url({{ site.baseurl }}/{{ post.image }})">
+                    <div class="card-content">
+                        <h3 class="card-title font-0">{{ post.title }}</h3>
+                        <p class="post-desc">{{ post.excerpt | truncatewords: 15 }}</p>
+                        <div class="card-date">{{ post.date | date_to_string }}</div>
+                        <p class="post-category capitalize">{{ post.categories | array_to_sentence_string}}</p>
+                    </div>
+                    </a>
+                </li>
+                {% endfor %}
+            </ul>
+        </section>
+
+    </section>
+
+
 </main>
+

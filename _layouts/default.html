@@ -8,9 +8,9 @@
   <meta name="keywords" content="wine grapes uk, wine grapes for sale uk, homemade wine, buy wine grapes uk, italian wine grapes, make wine uk">
   <link rel="stylesheet" href="../assets/css/main.css">
   {% if page.custom_css %}
-  <!-- {% for stylesheet in page.custom_css %} -->
-  <link rel="stylesheet" href="../assets/css/{{ stylesheet }}.css">
-  <!-- {% endfor %} -->
+    {% for stylesheet in page.custom_css %}
+      <link rel="stylesheet" href="../assets/css/{{ stylesheet }}.css">
+    {% endfor %}
   {% endif %}
 
   <link rel="apple-touch-icon" sizes="180x180" href="../assets/images/uva-favicon.png">

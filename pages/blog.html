@@ -14,9 +14,7 @@ custom_css: blog
                 <a href="{{ post.url }}">
                     <img class="my-posts__img" src="{{ post.image }}" alt="">
                 </a>
-                <a href="{{ post.url }}" class="my-posts__title width-fit">
-                    <h3 class="font-2">{{ post.title }}</h3>
-                </a>
+                <a href="{{ post.url }}" class="my-posts__title width-fit"><h3 class="font-2">{{ post.title }}</h3></a>
                 <p class="post__description">
                     {{ post.excerpt | strip_html | strip_newlines | truncatewords: 24 }}
                 </p>
@@ -24,7 +22,7 @@ custom_css: blog
             {% endfor %}
         </ul>
     </section>
-
+    
 
     <section class="">
         <h2 class="capitalize">Older Articles</h2>
@@ -34,12 +32,12 @@ custom_css: blog
                 {% for post in site.posts limit: 5 offset: 1 %}
                 <li class="">
                     <a class="card" href="{{ post.url }}" style="--bg-img: url({{ site.baseurl }}/{{ post.image }})">
-                        <div class="card-content">
-                            <h3 class="card-title font-0">{{ post.title }}</h3>
-                            <p class="post-desc">{{ post.excerpt | truncatewords: 15 }}</p>
-                            <div class="card-date">{{ post.date | date_to_string }}</div>
-                            <p class="post-category capitalize">{{ post.categories | array_to_sentence_string}}</p>
-                        </div>
+                    <div class="card-content">
+                        <h3 class="card-title font-0">{{ post.title }}</h3>
+                        <p class="post-desc">{{ post.excerpt | truncatewords: 15 }}</p>
+                        <div class="card-date">{{ post.date | date_to_string }}</div>
+                        <p class="post-category capitalize">{{ post.categories | array_to_sentence_string}}</p>
+                    </div>
                     </a>
                 </li>
                 {% endfor %}
@@ -50,3 +48,4 @@ custom_css: blog
 
 
 </main>
+

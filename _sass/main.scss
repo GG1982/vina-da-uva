@@ -411,12 +411,11 @@ p > a:link {
 
 
 
-
-
 // Media Scroller
 .media-conatiner {
   padding-bottom: 2rem;
 }
+
 .media-scroller {
   display: grid;
   grid-auto-flow: column;
@@ -441,7 +440,7 @@ p > a:link {
   border-radius: var(--border-radius);
 }
 
-.media-element > img {
+.media-element>img {
   inline-size: 100%;
   aspect-ratio: 16 / 9;
   object-fit: cover;
@@ -460,12 +459,17 @@ p > a:link {
   .media-element {
     padding: 1rem;
   }
+
   .media-conatiner {
     padding-top: 2rem;
     padding-bottom: 2rem;
     padding-left: var(--border-radius);
   }
 }
+
+
+
+
 
 
 .wine-about__img {
@@ -530,9 +534,14 @@ p > a:link {
 
 // Products for grapes.html
 
+.grapes {
+  max-width: 600px;
+  margin-inline: auto;
+}
+
 .product__img {
   height: 200px;
-  width: 400px;
+  width: 100%;
   object-fit: cover;
 }
 
@@ -585,6 +594,7 @@ p > a:link {
   background-image: url(../../assets/images/vineyard4.jpg);
   height: var(--img-height);
 }
+
 
 .tools__img {
   background-image: url(../../assets/images/vineyard2.jpg);

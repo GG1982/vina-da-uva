@@ -20,7 +20,7 @@ permalink: /
                 <h2 class="font-1 capitalize">Wine grapes for sale UK</h2>
                 <p class="font--1">
                     Enjoy producing homemade wine from the finest grapes Italy has to offer. From six different grape varieties, you can be
-                    sure of creating quality wine.
+                    sure of creating high quality wine.
                 </p>
             </div>
             <p class="disclaimer">* Note: The wine season will begin on the 1st September.</p>
@@ -42,7 +42,7 @@ permalink: /
             <img src="{{ post.image }}" alt="a picture of {{ post.title }}" loading="lazy">
             <h3 class="capitalize font-1">{{ post.title }}</h3>
             <p>
-                {{ post.excerpt | strip_html | strip_newlines | truncatewords: 30 }}
+                {{ post.excerpt | strip_html | strip_newlines | truncatewords: 20 }}
             </p>
             <a class="capitalize" href="{{ post.url }}">{{ post.title }}: Read more</a>
         </div>

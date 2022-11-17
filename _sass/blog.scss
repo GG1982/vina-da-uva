@@ -25,7 +25,7 @@
     text-decoration: none;
 
     border-radius: 1em;
-    border: rgba(255, 36, 105, 0.25) 8px solid;
+    border: rgba(255, 36, 105, 0.25) 4px solid;
     box-shadow: rgba(0, 0, 0, 0.85) 0px 5px 15px;
     
     
@@ -52,6 +52,7 @@
 @media (hover: hover) {
     .recent-card:hover {
         color: #fff;
+        border: rgba(255, 36, 105, 0.5) 4px solid;
     }
     
     .recent-card:hover::after {
@@ -113,6 +114,7 @@
 @media (hover: hover) {
     .card:hover {
         color: #fff;
+        border: rgba(255, 36, 105, 0.5) 4px solid;
     }
     
     .card:hover::after {

@@ -71,6 +71,27 @@
 
 
 // Card
+
+.post-cat-title {
+    // background-color: #722F37;
+    margin-bottom: 2rem;
+    width: fit-content;
+    background: linear-gradient(to right, #006194 0%, #722F37 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    position: relative;
+}
+
+.post-cat-title::after {
+    position: absolute;
+    content: "";
+    bottom: -4px;
+    left: 10%;
+    right: 0;
+    width: 80%;
+    height: 4px;
+    background-color: #171c20;
+}
 .card {
     width: Min(20em, 100%);
     aspect-ratio: 4 / 3;

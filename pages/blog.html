@@ -13,37 +13,26 @@ custom_css: blog
             <a class="recent-card" href="{{ post.url }}" style="--bg-img: url({{ site.baseurl }}/{{ post.image }})">
                 <div class="card-content">
                     <h3 class="card-title font-2">{{ post.title }}</h3>
-                    <p class="recent-desc">{{ post.excerpt | truncatewords: 30 }}</p>
+                    <p class="post-desc">{{ post.content | markdownify | strip_html | truncatewords: 50 }}</p>
                     <div class="card-date">{{ post.date | date_to_string }}</div>
+
+                    <p class="post-category capitalize">{{ post.categories | array_to_sentence_string}}</p>
                 </div>
             </a>
             {% endfor %}
-
-
-            <!-- <li class="flex-col gap-1">
-                <a href="{{ post.url }}">
-                    <img class="recent-post__img" src="{{ post.image }}" alt="">
-                </a>
-                <a href="{{ post.url }}" class="recent-post__title width-fit"><h3 class="font-2">{{ post.title }}</h3></a>
-                <p class="post__description">
-                    {{ post.excerpt | strip_html | strip_newlines | truncatewords: 24 }}
-                </p>
-            </li> -->
         </ul>
     </section>
     
-
-    <section class="">
         <!-- <h2 class="capitalize">Older Articles</h2> -->
 
         <section class="cards-container mx-auto padding-block-3">
-            <ul role="list" class="grid-auto-fit grid-items-center mx-auto width-m row-gap-4 col-gap-2">
+            <ul class="grid-auto-fit grid-items-center mx-auto row-gap-4 col-gap-2">
                 {% for post in site.posts limit: 5 offset: 1 %}
                 <li class="">
                     <a class="card" href="{{ post.url }}" style="--bg-img: url({{ site.baseurl }}/{{ post.image }})">
                     <div class="card-content">
                         <h3 class="card-title font-0">{{ post.title }}</h3>
-                        <p class="post-desc">{{ post.excerpt | truncatewords: 15 }}</p>
+                        <p class="post-desc">{{ post.content | markdownify | strip_html | truncatewords: 50 }}</p>
                         <div class="card-date">{{ post.date | date_to_string }}</div>
                         <p class="post-category capitalize">{{ post.categories | array_to_sentence_string}}</p>
                     </div>
@@ -53,7 +42,6 @@ custom_css: blog
             </ul>
         </section>
 
-    </section>
 
 
 </main>

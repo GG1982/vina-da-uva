@@ -25,8 +25,8 @@
     text-decoration: none;
 
     border-radius: 1em;
-    border: rgba(255, 36, 105, 0.05) 4px solid;
-    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    border: rgba(255, 36, 105, 0.25) 8px solid;
+    box-shadow: rgba(0, 0, 0, 0.85) 0px 5px 15px;
     
     
     display: flex;
@@ -61,7 +61,7 @@
     
 }
 
-.recent-desc {
+.post-desc {
     display: -webkit-box;
     -webkit-line-clamp: 2;
     -webkit-box-orient: vertical;
@@ -71,9 +71,10 @@
 
 // Card
 .card {
-    max-width: 20em;
-    aspect-ratio: 1 / 1;
+    width: Min(20em, 100%);
+    aspect-ratio: 4 / 3;
     padding: 1em;
+    margin-inline: auto;
     
     font-size: 1.5em;
     color: #ffffff;
@@ -82,7 +83,6 @@
     border-radius: 1em;
     border: rgba(255, 36, 105, 0.05) 4px solid;
     box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
-    
 
     display: flex;
     align-items: flex-end;
@@ -91,6 +91,12 @@
     position: relative;
     isolation: isolate;
 }
+
+// @media (max-width: 55em) {
+//     .card {
+//         max-width: 100%;
+//     }
+// }
 
 .card::after {
     content: "";
@@ -119,7 +125,7 @@
 .card-content {
     display: flex;
     flex-direction: column;
-    gap: 0.35rem;
+    gap: 0.55rem;
 }
 
 .card-title {

@@ -5,26 +5,36 @@ permalink: /blog/
 custom_css: blog
 ---
 <main class="blog-posts flex-col width-m mx-auto gap-4 padding-t-4">
+    <h1 class="mx-auto capitalize">Our Blog</h1>
     <section>
-        <h1 class="capitalize">Latest article</h1>
-        <ul class="my-posts">
+        <!-- <h2 class="capitalize">Latest article</h2> -->
+        <ul class="recent-post">
             {% for post in site.posts limit: 1 %}
-            <li class="flex-col gap-1">
+            <a class="recent-card" href="{{ post.url }}" style="--bg-img: url({{ site.baseurl }}/{{ post.image }})">
+                <div class="card-content">
+                    <h3 class="card-title font-2">{{ post.title }}</h3>
+                    <p class="recent-desc">{{ post.excerpt | truncatewords: 30 }}</p>
+                    <div class="card-date">{{ post.date | date_to_string }}</div>
+                </div>
+            </a>
+            {% endfor %}
+
+
+            <!-- <li class="flex-col gap-1">
                 <a href="{{ post.url }}">
-                    <img class="my-posts__img" src="{{ post.image }}" alt="">
+                    <img class="recent-post__img" src="{{ post.image }}" alt="">
                 </a>
-                <a href="{{ post.url }}" class="my-posts__title width-fit"><h3 class="font-2">{{ post.title }}</h3></a>
+                <a href="{{ post.url }}" class="recent-post__title width-fit"><h3 class="font-2">{{ post.title }}</h3></a>
                 <p class="post__description">
                     {{ post.excerpt | strip_html | strip_newlines | truncatewords: 24 }}
                 </p>
-            </li>
-            {% endfor %}
+            </li> -->
         </ul>
     </section>
     
 
     <section class="">
-        <h2 class="capitalize">Older Articles</h2>
+        <!-- <h2 class="capitalize">Older Articles</h2> -->
 
         <section class="cards-container mx-auto padding-block-3">
             <ul role="list" class="grid-auto-fit grid-items-center mx-auto width-m row-gap-4 col-gap-2">

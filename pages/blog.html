@@ -4,6 +4,9 @@ title: blog - Buy Italian Wine Grapes
 permalink: /blog/
 custom_css: blog
 ---
+
+
+
 <main class="blog-posts flex-col width-m mx-auto gap-2 padding-t-4">
     <section>
         <ul class="recent-post">
@@ -26,7 +29,7 @@ custom_css: blog
             {% for category in site.categories limit: 4 %}
                 {% capture category_name %}{{ category | first }}{% endcapture %}
                 <div class="flex-col flex-center">
-                    <h3 class="post-cat-title title-font capitalize">category: {{ category_name }}</h3>
+                    <h3 class="post-cat-title title-font capitalize" id="{{ category_name }}">category: {{ category_name }}</h3>
                     <ul class="grid-auto-fit grid-items-center mx-auto gap-2 padding-b-1">
                         {% for post in site.categories[category_name] limit: 3 %}
                         <li class="">

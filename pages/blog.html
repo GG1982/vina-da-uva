@@ -4,18 +4,12 @@ title: blog - Buy Italian Wine Grapes
 permalink: /blog/
 custom_css: blog
 ---
-
-{% assign cat = page.categories[0] %}
-{% assign cat_list = site.categories[cat] %}
-
-
 <main class="blog-posts flex-col width-m mx-auto gap-2 padding-t-4">
-    <h1 class="mx-auto font-4 capitalize">Blog Posts</h1>
     <section>
-        <!-- <h2 class="capitalize">Latest article</h2> -->
         <ul class="recent-post">
             {% for post in site.posts limit: 1 %}
-            <a class="recent-card" href="{{ post.url }}" style="--bg-img: url({{ site.baseurl }}/{{ post.image }})">
+            <h1 class="mx-auto post-cat-title font-4 title-font capitalize">Blog Posts</h1>
+            <a class="recent-card mx-auto " href="{{ post.url }}" style="--bg-img: url({{ site.baseurl }}/{{ post.image }})">
                 <div class="card-content">
                     <h3 class="card-title font-2">{{ post.title }}</h3>
                     <p class="post-desc">{{ post.content | markdownify | strip_html | truncatewords: 50 }}</p>
@@ -28,26 +22,28 @@ custom_css: blog
         </ul>
     </section>
     
-    <section class="cards-container mx-auto padding-block-3">
-        {% for category in site.categories %}
-            {% capture category_name %}{{ category | first }}{% endcapture %}
-            <h3 class="post-cat-title capitalize">{{category_name}} posts</h3>
-        {% endfor %}
-        <ul class="grid-auto-fit grid-items-center mx-auto row-gap-4 col-gap-2">
-
-        {% for post in site.categories.grape limit: 5 offset: 1 %}
-        <li class="">
-            <a class="card" href="{{ post.url }}" style="--bg-img: url({{ site.baseurl }}/{{ post.image }})">
-            <div class="card-content">
-                <h3 class="card-title font-0">{{ post.title }}</h3>
-                <p class="post-desc">{{ post.content | markdownify | strip_html | truncatewords: 50 }}</p>
-                <div class="card-date">{{ post.date | date_to_string }}</div>
-                <p class="post-category capitalize">{{ post.categories | array_to_sentence_string}}</p>
-            </div>
-            </a>
-        </li>
-        {% endfor %}
-        </ul>
+    <section class="cards-container flex-col flex-center gap-4 padding-t-4">
+            {% for category in site.categories limit: 4 %}
+                {% capture category_name %}{{ category | first }}{% endcapture %}
+                <div class="flex-col flex-center">
+                    <h3 class="post-cat-title title-font capitalize">category: {{ category_name }}</h3>
+                    <ul class="grid-auto-fit grid-items-center mx-auto gap-2 padding-b-1">
+                        {% for post in site.categories[category_name] limit: 3 %}
+                        <li class="">
+                            <a class="card" href="{{ post.url }}" style="--bg-img: url({{ site.baseurl }}/{{ post.image }})">
+                            <div class="card-content">
+                                <h3 class="card-title capitalize font-0">{{ post.title }}</h3>
+                                <p class="post-desc">{{ post.content | markdownify | strip_html | truncatewords: 50 }}</p>
+                                <div class="card-date">{{ post.date | date_to_string }}</div>
+                                <!-- <p class="post-category capitalize">{{ post.categories | array_to_sentence_string}}</p> -->
+                            </div>
+                            </a>
+                        </li>
+                        {% endfor %}
+                    </ul>
+                </div>
+            {% endfor %}
+        
     </section>
 
 

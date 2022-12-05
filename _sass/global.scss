@@ -334,6 +334,13 @@ p {
 .flex-justify-end {
     justify-content: flex-end;
 }
+.flex-align-start {
+    align-items: flex-start;
+}
+
+.flex-justify-start {
+    justify-content: flex-start;
+}
 .flex-between {
     justify-content: space-between;
 }

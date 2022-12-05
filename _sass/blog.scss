@@ -1,19 +1,10 @@
 // Posts Hoempage
 
-// .older-posts__body {
-    //     border-radius: var(--border-radius);
-    //     border-inline: 1px solid gainsboro;
-    //     border-block: 0;
-    //     padding: 0.5em;
-    // }
-    
-    // .my-posts__img {
-        //     width: 100%;
-        //     object-fit: cover;
-        //     max-height: 200px;
-        // }
-        
-        
+:root {
+    --border-width: 2px;
+    --box-shadow: rgba(0, 0, 0, 0.45) 0px 5px 15px;
+}
+
 .recent-card {
     width: Min(100%, 40em);
     margin-inline: auto;
@@ -25,8 +16,8 @@
     text-decoration: none;
 
     border-radius: 1em;
-    border: rgba(255, 36, 105, 0.25) 4px solid;
-    box-shadow: rgba(0, 0, 0, 0.85) 0px 5px 15px;
+    border: rgba(255, 36, 105, 0.25) var(--border-width) solid;
+    box-shadow: var(--box-shadow);
     
     
     display: flex;
@@ -42,7 +33,7 @@
     inset: 0;
     position: absolute;
     z-index: -1;
-    background-image: linear-gradient(rgba(23, 28, 32, 0.2), rgba(23, 28, 32, 1)), var(--bg-img);
+    background-image: linear-gradient(rgba(23, 28, 32, 0.4), rgba(23, 28, 32, 0.8)), var(--bg-img);
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -52,7 +43,7 @@
 @media (hover: hover) {
     .recent-card:hover {
         color: #fff;
-        border: rgba(255, 36, 105, 0.5) 4px solid;
+        border: rgba(255, 36, 105, 0.5) var(--border-width) solid;
     }
     
     .recent-card:hover::after {
@@ -71,30 +62,34 @@
 
 
 // Card
+.title-font {
+    font-family: 'Merriweather', serif;
+}
 
 .post-cat-title {
     // background-color: #722F37;
     margin-bottom: 2rem;
     width: fit-content;
-    background: linear-gradient(to right, #006194 0%, #722F37 100%);
+    background: linear-gradient(to right, #000428 0%, #004e92 100%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     position: relative;
 }
 
 .post-cat-title::after {
+    --width: 80%;
+    width: var(--width);
     position: absolute;
     content: "";
+
     bottom: -4px;
-    left: 10%;
-    right: 0;
-    width: 80%;
+    left: calc((100% - var(--width)) / 2); // center underline
     height: 4px;
-    background-color: #171c20;
+    background: linear-gradient(to right, #000428 0%, #004e92 100%);
 }
 .card {
-    width: Min(20em, 100%);
-    aspect-ratio: 4 / 3;
+    // width: Min(12em, 100%);
+    aspect-ratio: 5 / 4;
     padding: 1em;
     margin-inline: auto;
     
@@ -103,8 +98,8 @@
     text-decoration: none;
     
     border-radius: 1em;
-    border: rgba(255, 36, 105, 0.05) 4px solid;
-    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    border: rgba(255, 36, 105, 0.05) var(--border-width) solid;
+    box-shadow: var(--box-shadow);
 
     display: flex;
     align-items: flex-end;
@@ -114,18 +109,13 @@
     isolation: isolate;
 }
 
-// @media (max-width: 55em) {
-//     .card {
-//         max-width: 100%;
-//     }
-// }
 
 .card::after {
     content: "";
     inset: 0;
     position: absolute;
     z-index: -1;
-    background-image: linear-gradient(rgba(23, 28, 32, 0.3), rgba(23, 28, 32, 1)), var(--bg-img);
+    background-image: linear-gradient(rgba(23, 28, 32, 0.6), rgba(23, 28, 32, 1)), var(--bg-img);
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -135,7 +125,7 @@
 @media (hover: hover) {
     .card:hover {
         color: #fff;
-        border: rgba(255, 36, 105, 0.5) 4px solid;
+        border: rgba(255, 36, 105, 0.5) var(--border-width) solid;
     }
     
     .card:hover::after {
@@ -168,6 +158,11 @@
     padding: 0 0.5rem ;
     border-radius: 0.3rem;
 }
+
+
+
+
+
 
 // Blog Article
 .blog__body {

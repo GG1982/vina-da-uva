@@ -218,6 +218,10 @@ p > a:link {
     }
   }
 
+  .logo {
+    max-width: Min(100px, 60%);
+  }
+
   .nav__link {
     display: flex;
     color: #fff;
@@ -226,7 +230,7 @@ p > a:link {
 
   .mobile-nav-toggle {
     position: absolute;
-    top: 2rem;
+    top: 1rem;
     right: 1rem;
     display: flex;
     flex-direction: column;

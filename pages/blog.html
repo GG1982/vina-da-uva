@@ -25,7 +25,7 @@ custom_css: blog
         </ul>
     </section>
     
-    <section class="cards-container flex-col flex-center gap-4 padding-t-4">
+    <section class="flex-col flex-center gap-4 padding-t-4">
             {% for category in site.categories limit: 4 %}
                 {% capture category_name %}{{ category | first }}{% endcapture %}
                 <div class="flex-col flex-center">

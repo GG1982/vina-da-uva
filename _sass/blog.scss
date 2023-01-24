@@ -87,8 +87,10 @@
     height: 4px;
     background: linear-gradient(to right, #000428 0%, #004e92 100%);
 }
+
 .card {
-    // width: Min(12em, 100%);
+    width: Min(20em, 100%);
+    // max-width: 12em;
     aspect-ratio: 5 / 4;
     padding: 1em;
     margin-inline: auto;

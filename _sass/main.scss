@@ -33,7 +33,7 @@ body {
   --min-width-m: min(100% - 1rem, 90em, 90vw);
   --min-width-s: min(100% - 1rem, 50em, 90vw);
 
-  --min-width-pages: min(100% - 1rem, 65em, 90vw);
+  --min-width-pages: min(100% - 1rem, 70em, 90vw);
   --min-width-media: min(100%, 55rem);
 
   --min-width-calc: min(100% - 2rem, 55em);
@@ -151,11 +151,12 @@ p > a:link {
 .nav__link {
   text-decoration: none;
   color: #000;
+  font-size: 1rem;
 
   position: relative;
 }
 
-@media (hover: hover) and (min-width: 800px) {
+@media (hover: hover) and (min-width: 850px) {
   .nav__link::after {
     content: "";
     position: absolute;
@@ -179,7 +180,7 @@ p > a:link {
 }
 
 .logo {
-  max-width: Min(250px, 60%);
+  max-width: Min(200px, 60%);
 }
 
 .mobile-nav-toggle {
@@ -191,7 +192,7 @@ p > a:link {
 }
 
 
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 850px) {
 
   .header {
     padding: 1rem 0 2rem;
@@ -219,7 +220,7 @@ p > a:link {
   }
 
   .logo {
-    max-width: Min(100px, 60%);
+    max-width: Min(160px, 60%);
   }
 
   .nav__link {

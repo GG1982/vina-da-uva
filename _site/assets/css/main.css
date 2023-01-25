@@ -541,7 +541,7 @@ p { font-size: var(--step--2); }
 
 .gallery-item > img { inline-size: 100%; aspect-ratio: 2 / 3; object-fit: cover; }
 
-.gallery-item > .image-desc { align-self: baseline; line-height: 1.7; position: sticky; top: 20px; }
+.gallery-item > .image-desc { align-self: baseline; line-height: 1.7; position: sticky; top: 50px; }
 
 .image-desc > p { font-size: 1.3rem; }
 

@@ -313,9 +313,9 @@ p > a:link {
 
 .hero__intro {
   display: grid;
-
-  grid-template-areas: 
-  "title title body";
+  grid-template-columns: 0.55fr 0.45fr;
+  // grid-template-areas: 
+  // "title title body";
 
   column-gap: 2rem;
   row-gap: 2rem;
@@ -327,19 +327,15 @@ p > a:link {
 }
 
 .hero--title {
-  grid-area: title;
+  // grid-area: title;
   display: flex;
   flex-direction: column;
   row-gap: 2rem;
-  color: 1em;
 }
 
 .hero__body {
-  position: relative;
-  max-width: 55ch;
-  align-self: start;
-
-  grid-area: body;
+  justify-self: end;
+  // align-self: center;
 }
 // .hero__body::before {
 //   content: "";
@@ -351,7 +347,11 @@ p > a:link {
 //   height: 2px;
 //   background-color: $clr--wine;
 // }
-.hero__body::after {
+
+.hero__body__btn {
+  position: relative;
+}
+.hero__body__btn::after {
   content: "";
   position: absolute;
   margin-bottom: -10px;
@@ -368,7 +368,7 @@ p > a:link {
   background-color: $bodyColor;
   color: $backgroundColor;
   padding: 1rem 2rem;
-  width: 30rem;
+  max-width: 25rem;
   text-decoration: none;
   border-radius: var(--border-radius);
   text-align: center;
@@ -379,11 +379,16 @@ p > a:link {
   background-color: $clr--wine;
   color: $backgroundColor;
   padding: 1rem 2rem;
-  width: 30rem;
+  max-width: 25rem;
   text-decoration: none;
   border-radius: var(--border-radius);
   text-align: center;
   font-size: var(--step--1);
+}
+
+.hero__body__btn {
+  // align-self: end;
+  justify-self: end;
 }
 
 
